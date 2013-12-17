@@ -680,6 +680,7 @@ ja:
     min_body_similar_length: "類似トピックのチェックに必要なポスト本文の最小長"
 
     category_colors: "カテゴリに利用可能な色 (16進数指定) のリスト。パイプ (|) 区切りで指定"
+    enable_wide_category_list: "旧バージョンの全幅表示のカテゴリリストを利用する。注意: この設定は現時点では正しく機能しません (近日中にこの設定は削除される予定です)。"
 
     max_image_size_kb: "アップロード可能な画像の最大サイズ (kB) - nginx 側での設定 (client_max_body_size) / apache または proxy における設定も同時に行ってください"
     max_attachment_size_kb: "アップロード可能な添付ファイルの最大サイズ (kB) - nginx 側での設定 (client_max_body_size) / apache または proxy における設定も同時に行ってください"
@@ -725,6 +726,15 @@ ja:
 
     sequential_replies_threshold: "ユーザに警告通知を行う、連続ポスト投稿のしきい値"
 
+    enable_mobile_theme: "モバイル端末にモバイル向けテーマ (通常サイト用テーマにスイッチ可能) を利用する。レスポンシブなスタイルシートを使用する場合はこの設定を無効にしてください。"
+
+    dominating_topic_minimum_percent: "ユーザがトピックを占拠していると判断するポスト投稿支配率 (パーセント)。"
+
+    enable_names: "ユーザのフルネームを表示する"
+    display_name_on_posts: "ポストにおいてもユーザのフルネームを表示する"
+    invites_shown: "ユーザページに表示する招待履歴の最大数"
+    short_progress_text_threshold: "プログレスバーが現在のポスト番号のみを表示するようになるポスト数のしきい値。プログレスバーの幅を変更した際には、この値を変更することをおすすめします。"
+
   notification_types:
     mentioned: "%{link} で %{display_username} があなたをメンションしました"
     liked: "%{link} で %{display_username} があなたのポストを「いいね！」しました"
@@ -761,6 +771,18 @@ ja:
     archived_disabled: "このトピックはアーカイブ解除されました。凍結解除され、変更可能になりました。"
     closed_enabled: "このトピックは終了しました。新たに回答を投稿することはできません。"
     closed_disabled: "このトピックはオープンされました。新たに回答を投稿することができます。"
+    autoclosed_enabled_days:
+      zero: "このトピックは1日が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      one: "このトピックは1日が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      other: "このトピックは%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+    autoclosed_enabled_hours:
+      zero: "このトピックは1時間が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      one: "このトピックは1時間が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      other: "このトピックは%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+    autoclosed_enabled_minutes:
+      zero: "このトピックは1分が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      one: "このトピックは1分が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
+      other: "このトピックは%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません。"
     autoclosed_disabled: "このトピックは再オープンされました。新しい回答が投稿できるようになりました。。"
     pinned_enabled: "このトピックはピン留めされました。ピン留めボタンが押されるかモデレータによってピン留めが解除されるまで、カテゴリのトップに表示されます。"
     pinned_disabled: "このトピックのピン留めが解除されました。以後、カテゴリのトップに表示されません。"
@@ -774,7 +796,8 @@ ja:
     active: "アカウントが利用可能になりました。"
     activate_email: "<b>%{email}</b> にメールを送りました。メールの指示に従ってあなたのアカウントを有効にしてください。"
     not_activated: "まだログインできません。メールを送信済ですので、メールの指示に従ってあなたのアカウントを有効にしてください。"
-    banned: "%{date} までログインできません。"
+    suspended: "%{date} までログインできません。"
+    suspended_with_reason: "%{date} までログインできません。アカウントがサスペンドされた理由は次の通りです: %{reason}"
     errors: "%{errors}"
     not_available: "利用できません。%{suggestion} を試してみては?"
     something_already_taken: "エラーが発生しました。ユーザ名またはメールアドレスが既に使用中の可能性があります。パスワードリセットを行ってください。"
@@ -792,6 +815,8 @@ ja:
     email:
       not_allowed: "はこのメールプロバイダーを許可していません。他のメールアドレスを使用してください。"
       blocked: "は許可されていません。"
+    ip_address:
+      blocked: "はブロックされてます。"
 
   invite_mailer:
     subject_template: "[%{site_name}] %{invitee_name} が %{site_name} のディスカッションにあなたを招待しています"
@@ -803,6 +828,19 @@ ja:
       [Visit %{site_name}][1]
 
       もしトラステッドユーザより招待された場合は、ログインすることなくすぐに回答を投稿することができます。
+
+      [1]: %{invite_link}
+
+  invite_forum_mailer:
+    subject_template: "[%{site_name}] %{invitee_name} が %{site_name} にあたなを招待しています"
+    text_body_template: |
+      %{invitee_name} が %{site_name} にあなたを招待しています。
+
+      もしよろしければ、以下のリンクをクリックして参加してください:
+
+      [Visit %{site_name}][1]
+
+      もしトラステッドユーザより招待された場合は、ログインすることなくすぐに参加することができます。
 
       [1]: %{invite_link}
 
@@ -1088,6 +1126,10 @@ ja:
       from: "%{site_name} ダイジェスト"
       read_more: "もっと読む"
 
+      posts:
+        one: "1個のポスト"
+        other: "%{count}個のポスト"
+
     forgot_password:
       subject_template: "[%{site_name}] パスワードのリセット"
       text_body_template: |
@@ -1158,6 +1200,7 @@ ja:
   deleted: 'deleted'
 
   upload:
+    edit_reason: "リモート画像のコピーをダウンロードしました"
     unauthorized: "申し訳ありません、ファイルのアップロードが拒否されました (サポートするファイルの拡張子: %{authorized_extensions})."
     pasted_image_filename: "貼り付けた画像"
     attachments:
@@ -1167,3 +1210,8 @@ ja:
       fetch_failure: "申し訳ありませんが、画像取得中にエラーが発生しました。"
       unknown_image_type: "申し訳ありませんが、アップロードしようとしたファイルは画像ではないようです。"
       size_not_found: "申し訳ありませんが、画像のサイズを判定できませんでした。画像が壊れているかもしれません。"
+
+  flag_reason:
+    sockpuppet: "新規ユーザがトピックを作成し、同じ IP アドレスより別の新規ユーザが回答を投稿しました。サイトの flag_sockpuppets 設定を確認してください。"
+    spam_hosts: "このユーザは同一ドメインへのリンクを含むポストを複数作成しようとしました。サイトの newuser_spam_host_threshold 設定を確認してください。"
+
