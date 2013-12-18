@@ -185,7 +185,8 @@ ja:
 
     categories:
       all: "全てのカテゴリ"
-      only_category: "{{categoryName}}のみ"
+      all_subcategories: "全てのサブカテゴリ"
+      no_subcategory: "サブカテゴリなし"
       category: "カテゴリ"
       posts: "ポスト"
       topics: "トピック"
@@ -193,7 +194,8 @@ ja:
       latest_by: "latest by"
       toggle_ordering: "カテゴリ並び替えモードをトグル"
       subcategories: "サブカテゴリ:"
-
+      total_topics: "総トピック数: %{count}"
+      total_posts: "総ポスト数: %{count}"
     user:
       said: "{{username}} のコメント:"
       profile: "プロフィール"
