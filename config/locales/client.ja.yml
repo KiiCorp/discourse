@@ -375,6 +375,7 @@ ja:
     month_desc: '過去30日間に投稿されたトピック'
     week: 'ポスト/週'
     week_desc: '過去7日間に投稿されたトピック'
+    day: 'ポスト/日'
 
     first_post: 最初のポスト
     mute: ミュート
