@@ -1144,7 +1144,7 @@ ja:
           view_chart: "棒グラフ表示"
 
       commits:
-        latest_changes: "最新の更新内容: 定期的にアップデートしてください!"
+        latest_changes: "最新の更新内容:"
         by: "by"
 
       flags:
