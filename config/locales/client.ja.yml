@@ -1105,7 +1105,7 @@ ja:
 
   # This section is exported to the javascript for i18n in the admin section
   admin_js:
-    type_to_filter: "ファルタのタイプ..."
+    type_to_filter: "設定項目の絞り込み..."
 
     admin:
       title: 'Discourse 管理者'
