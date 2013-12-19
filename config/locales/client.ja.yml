@@ -332,7 +332,7 @@ ja:
         search: "招待履歴を検索するためにキーワードを入力してください..."
         title: "招待"
         user: "招待したユーザ"
-        none: "{{username}} はこのサイトに誰も招待していません。"
+        none: "誰も招待していません。"
         truncated: "最初の {{count}} 個の招待履歴を表示しています。"
         redeemed: "受理された招待"
         redeemed_at: "受理日"
@@ -372,13 +372,13 @@ ja:
     close: "閉じる"
     learn_more: "より詳しく..."
 
-    year: 'ポスト/年'
+    year: '/年'
     year_desc: '過去365日間に投稿されたトピック'
-    month: 'ポスト/月'
+    month: '/月'
     month_desc: '過去30日間に投稿されたトピック'
-    week: 'ポスト/週'
+    week: '/週'
     week_desc: '過去7日間に投稿されたトピック'
-    day: 'ポスト/日'
+    day: '/日'
 
     first_post: 最初のポスト
     mute: ミュート
