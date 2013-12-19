@@ -2,6 +2,7 @@ module JsLocaleHelper
 
   def self.output_locale(locale, translations = nil)
     locale_str = locale.to_s
+    I18n.locale = locale_str
 
     # load default translations
     translations ||= YAML::load(File.open("#{Rails.root}/config/locales/client.#{locale_str}.yml"))
