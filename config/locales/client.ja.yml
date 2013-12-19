@@ -350,6 +350,7 @@ ja:
         title: "パスワード"
         too_short: "パスワードが短すぎます。"
         ok: "パスワード OK。"
+        instructions: "%{count} 文字以上の長さにしてください。"
 
       ip_address:
         title: "最終 IP アドレス"
@@ -1006,6 +1007,7 @@ ja:
       add_permission: "パーミッションを追加"
       this_year: "今年"
       position: "ポジション"
+      default_position: "デフォルトポジション"
       parent: "親カテゴリ"
 
     flagging:

@@ -58,7 +58,10 @@ ja:
   topics_in_category: "'%{category}' カテゴリ内のトピック"
   rss_posts_in_topic: "'%{topic}' の RSS フィード"
   rss_topics_in_category: "'%{category}' カテゴリ内のトピックの RSS フィード"
-  author_wrote: "%{author} wrote:"
+  num_posts: "ポスト:"
+  num_participants: "参加者:"
+  read_full_topic: "Read full topic"
+  author_wrote: "%{author} の投稿:"
   private_message_abbrev: "PM"
   rss_description:
     latest: "最新トピック"
@@ -734,6 +737,7 @@ ja:
     display_name_on_posts: "ポストにおいてもユーザのフルネームを表示する"
     invites_shown: "ユーザページに表示する招待履歴の最大数"
     short_progress_text_threshold: "プログレスバーが現在のポスト番号のみを表示するようになるポスト数のしきい値。プログレスバーの幅を変更した際には、この値を変更することをおすすめします。"
+    default_code_lang: "Github コードブロックにデフォルトで適用されるプログラム言語シンタックスハイライト (lang-auto, ruby, python 等)"
 
   notification_types:
     mentioned: "%{link} で %{display_username} があなたをメンションしました"
