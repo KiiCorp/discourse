@@ -372,13 +372,13 @@ ja:
     close: "閉じる"
     learn_more: "より詳しく..."
 
-    year: '/年'
+    year: '年'
     year_desc: '過去365日間に投稿されたトピック'
-    month: '/月'
+    month: '月'
     month_desc: '過去30日間に投稿されたトピック'
-    week: '/週'
+    week: '週'
     week_desc: '過去7日間に投稿されたトピック'
-    day: '/日'
+    day: '日'
 
     first_post: 最初のポスト
     mute: ミュート
@@ -1453,9 +1453,9 @@ ja:
           security: 'セキュリティ'
           seo: 'SEO'
           spam: 'スパム'
-          rate_limits: 'Rate Limits'
-          developer: '開発者'
-          uncategorized: 'カテゴリなし'
+          rate_limits: '投稿制限'
+          developer: '開発者向け'
+          uncategorized: 'その他'
 
     lightbox:
       download: "ダウンロード"
