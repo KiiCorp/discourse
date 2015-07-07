@@ -642,7 +642,7 @@ ja:
       title_placeholder: "このディスカッションを簡潔に説明してください。"
       edit_reason_placeholder: "編集する理由は何ですか?"
       show_edit_reason: "(編集理由を追加)"
-      reply_placeholder: "ここの入力してください。Markdown、BBCode、HTMLフォーマットが利用可能です。画像をドラッグまたは貼付けるとアップロードできます。"
+      reply_placeholder: "ここに入力してください。Markdown、BBCode、HTMLフォーマットが利用可能です。画像をドラッグまたは貼付けるとアップロードできます。"
       view_new_post: "新規ポストを見る。"
       saving: "保存中..."
       saved: "保存完了!"
