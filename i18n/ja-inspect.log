@@ -273,7 +273,7 @@ This is an automated message from %{site_name} to inform you that your post was 
 
 Multiple community members flagged this post before it was hidden, so please consider how you might revise your post to reflect their feedback. **You can edit your post after %{edit_delay} minutes, and it will be automatically unhidden.**
 
-However, if the post is hidden by the community a second time, it will remain hidden until handled by staff – and there may be further action, including the possible suspension of your account.
+However, if the post is hidden by the community a second time, it will remain hidden until handled by staff ? and there may be further action, including the possible suspension of your account.
 
 For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
  {:path=>"config/locales/server.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
@@ -282,13 +282,13 @@ For additional guidance, please refer to our [community guidelines](%{base_url}/
 
 ## Keep scrolling
 
-There are no next page buttons or page numbers – to read more, **just keep scrolling down!**
+There are no next page buttons or page numbers ? to read more, **just keep scrolling down!**
 
 As new posts come in, they will appear automatically.
 
 ## Where am I?
 
-- For search, your user page, or the menu, use the **icon <kbd>☰</kbd> buttons at the upper right**.
+- For search, your user page, or the menu, use the **icon <kbd>?</kbd> buttons at the upper right**.
 
 - Any topic title will take you to the next unread post. Use the last activity time and post count to enter at the top or bottom.
 
@@ -330,7 +330,7 @@ When someone replies to your post, quotes your post, or mentions your `@username
 
 <img src="/images/welcome/notification-panel.png" width="178" height="59">
 
-Don't worry about missing a reply – you'll be emailed replies (and messages) if you aren't online when they arrive.
+Don't worry about missing a reply ? you'll be emailed replies (and messages) if you aren't online when they arrive.
 
 ## When are conversations new?
 
@@ -948,7 +948,6 @@ Blah blah blah
     composer
       error
         try_like: Have you tried the <i class="fa fa-heart"></i> button? {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-      reply_placeholder: Type here. Use Markdown, BBCode, or HTML to format. Drag or paste an image to upload it. {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
       auto_close
         all
           units:  {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
@@ -1022,16 +1021,6 @@ Blah blah blah
         home: <b>g</b>, <b>h</b> Home {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
         bookmarks: <b>g</b>, <b>b</b> Bookmarks {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
     badges
-      badge
-        promoter
-          name: Promoter {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-          description: Invited a user {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-        campaigner
-          name: Campaigner {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-          description: Invited 3 members {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-        champion
-          name: Champion {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-          description: Invited 10 members {:path=>"config/locales/client.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
   stringex
     characters
       ellipsis:  {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
@@ -1039,7 +1028,7 @@ Blah blah blah
   i18n
     transliterate
       rule
-        ț: t {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-        Ț: t {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-        ș: s {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
-        Ș: s {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
+        ?: t {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
+        ?: t {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
+        ?: s {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
+        ?: s {:path=>"config/locales/transliterate.ja.yml", :locale=>"ja", :type=>:missing_diff, :missing_diff_locale=>"en"}
