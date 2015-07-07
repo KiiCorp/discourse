@@ -2158,13 +2158,13 @@ ja:
           description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Granted</a> global edit, pin, close, archive, split and merge
         welcome:
           name: ようこそ
-          description: 「いいね！」をもらった。
+          description: 初めて「いいね！」をもらった。
         autobiographer:
           name: Autobiographer
           description: <a href="/my/preferences">プロフィール</a> 情報を書いた。
         anniversary:
           name: アニバーサリー
-          description: 今年一度でも投稿した
+          description: 過去一年の間に一度でも投稿した。
         nice_post:
           name: ナイス投稿
           description: 投稿が10人に「いいね！」をされた。このバッジは何度でももらえます。
@@ -2194,10 +2194,10 @@ ja:
           description: 投稿が1000人の訪問者にシェアされた。
         first_like:
           name: 初めての「いいね！」
-          description: 投稿に「いいね！」した。
+          description: 初めて投稿に「いいね！」した。
         first_flag:
           name: 最初のフラグ
-          description: 投稿にフラグをつけた。
+          description: 初めて投稿にフラグをつけた。
         promoter:
           name: プロモーター
           description: ユーザを一人招待した。
@@ -2209,13 +2209,13 @@ ja:
           description: ユーザを十人招待した。
         first_share:
           name: 初めてのシェア
-          description: 投稿をシェアした。
+          description: 初めて投稿をシェアした。
         first_link:
           name: 最初のリンク
-          description: サイト内の別投稿へのリンクを挿入した。
+          description: 初めてサイト内の別投稿へのリンクを挿入した。
         first_quote:
           name: 最初の引用
-          description: ユーザを引用した。
+          description: 初めてユーザを引用した。
         read_guidelines:
           name: ガイドライン既読
           description: <a href="/guidelines">コミュニティのガイドライン</a>を読んだ。
