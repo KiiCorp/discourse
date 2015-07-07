@@ -1,0 +1,1263 @@
+---
+"ja":
+  "activation":
+    "missing_session": >-
+      We can not detect if your account was created, please ensure you have cookies enabled.
+  "activemodel":
+    "errors":
+      "embed":
+        "load_from_remote": >-
+          There was an error loading that post.
+      "format": >-
+        %{attribute} %{message}
+      "messages":
+        "accepted": >-
+          must be accepted
+        "blank": >-
+          can't be blank
+        "confirmation": >-
+          doesn't match %{attribute}
+        "empty": >-
+          can't be empty
+        "equal_to": >-
+          must be equal to %{count}
+        "even": >-
+          must be even
+        "exclusion": >-
+          is reserved
+        "greater_than": >-
+          must be greater than %{count}
+        "greater_than_or_equal_to": >-
+          must be greater than or equal to %{count}
+        "inclusion": >-
+          is not included in the list
+        "invalid": >-
+          is invalid
+        "invalid_boolean": >-
+          Invalid boolean.
+        "less_than": >-
+          must be less than %{count}
+        "less_than_or_equal_to": >-
+          must be less than or equal to %{count}
+        "not_a_number": >-
+          is not a number
+        "not_an_integer": >-
+          must be an integer
+        "odd": >-
+          must be odd
+        "other_than": >-
+          must be other than %{count}
+        "present": >-
+          must be blank
+        "record_invalid": >-
+          Validation failed: %{errors}
+        "restrict_dependent_destroy":
+          "many": >-
+            Cannot delete record because dependent %{record} exist
+          "one": >-
+            Cannot delete record because a dependent %{record} exists
+        "taken": >-
+          has already been taken
+        "too_long":
+          "one": >-
+            is too long (maximum is 1 character)
+          "other": >-
+            is too long (maximum is %{count} characters)
+        "too_long_validation": >-
+          is limited to %{max} characters; you entered %{length}.
+        "too_short":
+          "one": >-
+            is too short (minimum is 1 character)
+          "other": >-
+            is too short (minimum is %{count} characters)
+        "wrong_length":
+          "one": >-
+            is the wrong length (should be 1 character)
+          "other": >-
+            is the wrong length (should be %{count} characters)
+      "template":
+        "body": >-
+          There were problems with the following fields:
+        "header":
+          "one": >-
+            1 error prohibited this %{model} from being saved
+          "other": >-
+            %{count} errors prohibited this %{model} from being saved
+  "activerecord":
+    "attributes":
+      "user":
+        "ip_address": ""
+  "admin_js":
+    "admin":
+      "backups":
+        "upload":
+          "title": >-
+            Upload a backup to this instance
+      "export_csv":
+        "success": >-
+          Export initiated, you will be notified via message when the process is complete.
+      "flags":
+        "agree_flag_hide_post_title": >-
+          Hide this post and automatically send the user a message urging them to edit it
+      "groups":
+        "default_title": >-
+          Default title for all users in this group
+        "primary_group": >-
+          Automatically set as primary group
+      "impersonate":
+        "invalid": >-
+          Sorry, you may not impersonate that user.
+        "not_found": >-
+          That user can't be found.
+    "badges":
+      "badge":
+        "campaigner":
+          "description": >-
+            Invited 3 members
+          "name": >-
+            Campaigner
+        "champion":
+          "description": >-
+            Invited 10 members
+          "name": >-
+            Champion
+        "promoter":
+          "description": >-
+            Invited a user
+          "name": >-
+            Promoter
+    "keyboard_shortcuts_help":
+      "jump_to":
+        "bookmarks": >-
+          <b>g</b>, <b>b</b> Bookmarks
+        "home": >-
+          <b>g</b>, <b>h</b> Home
+  "admin_login":
+    "success": >-
+      Email Sent
+  "badges":
+    "long_descriptions":
+      "anniversary": |
+        Blah blah blah
+        Blah blah blah
+      "autobiographer": |
+        Blah blah blah
+        Blah blah blah
+      "basic": |
+        Blah blah blah
+        Blah blah blah
+      "editor": |
+        Blah blah blah
+        Blah blah blah
+      "first_flag": |
+        Flagging is critical to the health of your community. If you notice any posts that require moderator attention please
+        do not hesitate to flag. You may also use the flagging dialog to send <b>messages</b> to users once you reach
+        trust level 1.
+      "first_like": |
+        Blah blah blah
+        Blah blah blah
+      "first_link": |
+        Blah blah blah
+        Blah blah blah
+      "first_quote": |
+        Blah blah blah
+        Blah blah blah
+      "first_share": |
+        Blah blah blah
+        Blah blah blah
+      "good_post": |
+        Blah blah blah
+        Blah blah blah
+      "good_share": |
+        Blah blah blah
+        Blah blah blah
+      "good_topic": |
+        Blah blah blah
+        Blah blah blah
+      "great_post": |
+        Blah blah blah
+        Blah blah blah
+      "great_share": |
+        Blah blah blah
+        Blah blah blah
+      "great_topic": |
+        Blah blah blah
+        Blah blah blah
+      "leader": |
+        Blah blah blah
+        Blah blah blah
+      "member": |
+        Blah blah blah
+        Blah blah blah
+      "nice_post": |
+        Blah blah blah
+        Blah blah blah
+      "nice_share": |
+        Blah blah blah
+        Blah blah blah
+      "nice_topic": |
+        Blah blah blah
+        Blah blah blah
+      "read_guidelines": |
+        Blah blah blah
+        Blah blah blah
+      "reader": |
+        Blah blah blah
+        Blah blah blah
+      "regular": |
+        Blah blah blah
+        Blah blah blah
+      "welcome": |
+        Blah blah blah
+        Blah blah blah
+  "category":
+    "errors":
+      "email_in_already_exist": >-
+        Incoming email address '%{email_in}' is already in use for '%{category_name}' category.
+  "content_types":
+    "welcome_invite":
+      "description": >-
+        A message automatically sent to all new invited users when they accept the invitation from another user to participate.
+    "welcome_user":
+      "description": >-
+        A message automatically sent to all new users when they sign up.
+  "dashboard":
+    "google_oauth2_config_warning": >-
+      The server is configured to allow signup and log in with Google OAuth2 (enable_google_oauth2_logins), but the client id and client secret values are not set. Go to <a href="/admin/site_settings">the Site Settings</a> and update the settings. <a href="https://meta.discourse.org/t/configuring-google-login-for-discourse/15858" target="_blank">See this guide to learn more</a>.
+    "site_contact_username_warning": >-
+      Enter the name of a friendly staff user account to send important automated messages from. Update site_contact_username in <a href='/admin/site_settings'>Site Settings</a>.
+  "date":
+    "formats":
+      "date_only": >-
+        %B %-d, %Y
+      "short": >-
+        %m-%d-%Y
+      "short_no_year": >-
+        %B %-d
+    "month_names": &1
+    - 
+    - >-
+      January
+    - >-
+      February
+    - >-
+      March
+    - >-
+      April
+    - >-
+      May
+    - >-
+      June
+    - >-
+      July
+    - >-
+      August
+    - >-
+      September
+    - >-
+      October
+    - >-
+      November
+    - >-
+      December
+  "discourse_hub":
+    "access_token_problem": >-
+      Tell an admin: Please update the site settings to include the correct discourse_org_access_key.
+  "education":
+    "new-topic": |
+      Welcome to %{site_name} &mdash; **thanks for starting a new conversation!**
+
+      - Does the title sound interesting if you read it out loud? Is it a good summary?
+
+      - Who would be interested in this? Why does it matter? What kind of responses do you want?
+
+      - Include commonly used words in your topic so others can *find* it. To group your topic with related topics, select a category.
+
+      For more, [see our community guidelines](/guidelines). This panel will only appear for your first %{education_posts_text}.
+  "email_log":
+    "anonymous_user": >-
+      User is anonymous
+    "body_blank": >-
+      body is blank
+    "suspended_not_pm": >-
+      User is suspended, not a message
+    "text_part_body_blank": >-
+      text_part.body is blank
+    "user_suspended": >-
+      user was suspended
+  "flagging":
+    "you_must_edit": >-
+      <p>Your post was flagged by the community. Please <a href="/my/messages">see your messages</a>.</p>
+  "groups":
+    "errors":
+      "member_already_exist": >-
+        '%{username}' is already a member of this group.
+  "guidelines_topic":
+    "body": |
+      <a name="civilized"></a>
+
+      ## [This is a Civilized Place for Public Discussion](#civilized)
+
+      Please treat this discussion forum with the same respect you would a public park.  We, too, are a shared community resource &mdash; a place to share skills, knowledge and interests through ongoing conversation.
+
+      These are not hard and fast rules, merely aids to the human judgment of our community. Use these guidelines to keep this a clean, well-lighted place for civilized public discourse.
+
+      <a name="improve"></a>
+
+      ## [Improve the Discussion](#improve)
+
+      Help us make this a great place for discussion by always working to improve the discussion in some way, however small. If you are not sure your post adds to the conversation, think over what you want to say and try again later.
+
+      The topics discussed here matter to us, and we want you to act as if they matter to you, too. Be respectful of the topics and the people discussing them, even if you disagree with some of what is being said.
+
+      One way to improve the discussion is by discovering ones that are already happening. Please spend some time browsing the topics here before replying or starting your own, and you’ll have a better chance of meeting others who share your interests.
+
+      <a name="agreeable"></a>
+
+      ## [Be Agreeable, Even When You Disagree](#agreeable)
+
+      You may wish to respond to something by disagreeing with it. That’s fine. But, remember to _criticize ideas, not people_. Please avoid:
+
+      *   Name-calling.
+      *   Ad hominem attacks.
+      *   Responding to a post’s tone instead of its actual content.
+      *   Knee-jerk contradiction.
+
+      Instead, provide reasoned counter-arguments that improve the conversation.
+
+      <a name="participate"></a>
+
+      ## [Your Participation Counts](#participate)
+
+      The conversations we have here set the tone for everyone. Help us influence the future of this community by choosing to engage in discussions that make this forum an interesting place to be &mdash; and avoiding those that do not.
+
+      Discourse provides tools that enable the community to collectively identify the best (and worst) contributions: favorites, bookmarks, likes, flags, replies, edits, and so forth. Use these tools to improve your own experience, and everyone else’s, too.
+
+      Let’s try to leave our park better than we found it.
+
+      <a name="flag-problems"></a>
+
+      ## [If You See a Problem, Flag It](#flag-problems)
+
+      Moderators have special authority; they are responsible for this forum. But so are you. With your help, moderators can be community facilitators, not just janitors or police.
+
+      When you see bad behavior, don’t reply. It encourages the bad behavior by acknowledging it, consumes your energy, and wastes everyone’s time. _Just flag it_. If enough flags accrue, action will be taken, either automatically or by moderator intervention.
+
+      In order to maintain our community, moderators reserve the right to remove any content and any user account for any reason at any time. Moderators do not preview new posts in any way; the moderators and site operators take no responsibility for any content posted by the community.
+
+      <a name="be-civil"></a>
+
+      ## [Always Be Civil](#be-civil)
+
+      Nothing sabotages a healthy conversation like rudeness:
+
+      *   Be civil. Don’t post anything that a reasonable person would consider offensive, abusive, or hate speech.
+      *   Keep it clean. Don’t post anything obscene or sexually explicit.
+      *   Respect each other. Don’t harass or grief anyone, impersonate people, or expose their private information.
+      *   Respect our forum. Don’t post spam or otherwise vandalize the forum.
+
+      These are not concrete terms with precise definitions &mdash; avoid even the _appearance_ of any of these things. If you’re unsure, ask yourself how you would feel if your post was featured on the front page of the New York Times.
+
+      This is a public forum, and search engines index these discussions. Keep the language, links, and images safe for family and friends.
+
+      <a name="keep-tidy"></a>
+
+      ## [Keep It Tidy](#keep-tidy)
+
+      Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
+
+      *   Don’t start a topic in the wrong category.
+      *   Don’t cross-post the same thing in multiple topics.
+      *   Don’t post no-content replies.
+      *   Don’t divert a topic by changing it midstream.
+      *   Don’t sign your posts &mdash; every post has your profile information attached to it.
+
+      Rather than posting “+1” or “Agreed”, use the Like button. Rather than taking an existing topic in a radically different direction, use Reply as a Linked Topic.
+
+      <a name="stealing"></a>
+
+      ## [Post Only Your Own Stuff](#stealing)
+
+      You may not post anything digital that belongs to someone else without permission. You may not post descriptions of, links to, or methods for stealing someone’s intellectual property (software, video, audio, images), or for breaking any other law.
+
+      <a name="power"></a>
+
+      ## [Powered by You](#power)
+
+      This site is operated by your [friendly local staff](/about) and *you*, the community. If you have any further questions about how things should work here, open a new topic in the [meta category](/c/meta) and let's discuss! If there's a critical or urgent issue that can't be handled by a meta topic or flag, contact us via the [staff page](/about).
+
+      <a name="tos"></a>
+
+      ## [Terms of Service](#tos)
+
+      Yes, legalese is boring, but we must protect ourselves &ndash; and by extension, you and your data &ndash; against unfriendly folks. We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
+  "i18n":
+    "transliterate":
+      "rule":
+        "Ș": >-
+          s
+        "ș": >-
+          s
+        "Ț": >-
+          t
+        "ț": >-
+          t
+  "invite_password_instructions":
+    "text_body_template": |
+      Thanks for accepting your invitation to %{site_name} -- welcome!
+
+      Click this link to choose a password now:
+      %{base_url}/users/password-reset/%{email_token}
+
+      If you don't remember your password, or don't have one yet, choose "I forgot my password" when logging in with your email address.
+  "js":
+    "category":
+      "notifications":
+        "reasons": 
+        "title": ""
+    "composer":
+      "auto_close":
+        "all":
+          "units": ""
+      "error":
+        "try_like": >-
+          Have you tried the <i class="fa fa-heart"></i> button?
+      "reply_placeholder": >-
+        Type here. Use Markdown, BBCode, or HTML to format. Drag or paste an image to upload it.
+    "filters":
+      "search":
+        "help": >-
+          search all topics
+    "notifications":
+      "popup":
+        "linked": >-
+          {{username}} linked to your post from "{{topic}}" - {{site_title}}
+        "private_message": >-
+          {{username}} sent you a private message in "{{topic}}" - {{site_title}}
+        "quoted": >-
+          {{username}} quoted you in "{{topic}}" - {{site_title}}
+        "replied": >-
+          {{username}} replied to you in "{{topic}}" - {{site_title}}
+    "post":
+      "actions":
+        "by_others":
+          "notify_user":
+            "one": >-
+              1 person sent a message to this user
+            "other": >-
+              {{count}} sent a message to this user
+        "people":
+          "notify_user": >-
+            {{icons}} sent a message
+          "notify_user_with_url": >-
+            {{icons}} sent a <a href='{{postUrl}}'>message</a>
+      "edit": >-
+        Editing {{link}} {{replyAvatar}} {{username}}
+      "gap":
+        "one": >-
+          view 1 hidden reply
+        "other": >-
+          view {{count}} hidden replies
+      "reply": >-
+        Replying to {{link}} {{replyAvatar}} {{username}}
+      "revisions":
+        "controls":
+          "comparing_previous_to_current_out_of_total": >-
+            <strong>{{previous}}</strong> <i class='fa fa-arrows-h'></i> <strong>{{current}}</strong> / {{total}}
+    "queue":
+      "approval":
+        "pending_posts":
+          "one": >-
+            You have <strong>1</strong> post pending.
+          "other": >-
+            You have <strong>{{count}}</strong> posts pending.
+      "delete_prompt": >-
+        Are you sure you want to delete <b>%{username}</b>? This will remove all of their posts and block their email and ip address.
+    "read_only_mode":
+      "enabled": >-
+        Read-only mode is enabled. You can continue to browse the site but interactions may not work.
+    "too_few_topics_notice": >-
+      Create at least 5 public topics and %{posts} public replies to get discussion started. New users cannot earn trust levels unless there's content for them to read. This message appears only to staff.
+    "topic":
+      "feature":
+        "make_banner": >-
+          Banner Topic
+        "pin_globally": >-
+          Pin Topic Globally
+        "remove_banner": >-
+          Remove Banner Topic
+      "invite_reply":
+        "error": >-
+          Sorry, we couldn't invite that person. Perhaps they have already been invited? (Invites are rate limited)
+        "sso_enabled": >-
+          Enter the username of the person you'd like to invite to this topic.
+        "success_email": >-
+          We mailed out an invitation to <b>{{emailOrUsername}}</b>. We'll notify you when the invitation is redeemed. Check the invitations tab on your user page to keep track of your invites.
+        "success_username": >-
+          We've invited that user to participate in this topic.
+        "to_topic_blank": >-
+          Enter the username or email address of the person you'd like to invite to this topic.
+        "to_topic_email": >-
+          You've entered an email address. We'll email an invitation that allows your friend to immediately reply to this topic.
+        "to_topic_username": >-
+          You've entered a username. We'll send a notification to that user with a link inviting them to this topic.
+        "to_username": >-
+          Enter the username of the person you'd like to invite. We'll send a notification to that user with a link inviting them to this topic.
+      "progress":
+        "jump_bottom": >-
+          jump to last post
+      "read_more_MF": >-
+        There { UNREAD, plural, =0 {} one { is <a href='/unread'>1 unread</a> } other { are <a href='/unread'># unread</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> topic} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> topics} } remaining, or {CATEGORY, select, true {browse other topics in {catLink}} false {{latestLink}} other {}}
+    "topic_map":
+      "links_title": >-
+        Popular Links
+      "participants_title": >-
+        Frequent Posters
+    "user":
+      "avatar":
+        "header_title": >-
+          profile, messages, bookmarks and preferences
+      "change_about":
+        "error": >-
+          There was an error changing ths value.
+      "change_avatar":
+        "gravatar": >-
+          <a href='//gravatar.com/emails' target='_blank'>Gravatar</a>, based on
+        "gravatar_title": >-
+          Change your avatar on Gravatar's website
+      "dynamic_favicon": >-
+        Show new / updated topic count on browser icon
+      "staff_counters":
+        "suspensions": >-
+          suspensions
+  "login":
+    "suspended_with_reason": >-
+      Account suspended until %{date}: %{reason}
+  "lounge_welcome":
+    "body": |2
+
+      Congratulations! :confetti_ball:
+
+      If you can see this topic, you were recently promoted to **regular** (trust level 3).
+
+      You can now &hellip;
+
+      * Edit the title of any topic
+      * Change the category of any topic
+      * Have all your links followed ([automatic nofollow](http://en.wikipedia.org/wiki/Nofollow) is removed)
+      * Access a private Lounge category only visible to users at trust level 3 and higher
+      * Hide spam with a single flag
+
+      Here's the [current list of fellow regulars](/badges/3/regular). Be sure to say hi.
+
+      Thanks for being an important part of this community!
+
+      (For more information on trust levels, [see this topic][trust]. Please note that only members who continue to meet the requirements over time will remain regulars.)
+
+      [trust]: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
+  "new_version_mailer":
+    "text_body_template": |
+      A new version of [Discourse](http://www.discourse.org) is available.
+
+      Your version: %{installed_version}
+      New version: **%{new_version}**
+
+      You may want to:
+
+      - See what's new in the [GitHub changelog](https://github.com/discourse/discourse/commits/master).
+
+      - Upgrade by visiting [%{base_url}/admin/upgrade](%{base_url}/admin/upgrade) and pressing the "Upgrade" button.
+
+      - Visit [meta.discourse.org](http://meta.discourse.org) for news, discussion, and support for Discourse.
+  "new_version_mailer_with_notes":
+    "text_body_template": |
+      A new version of [Discourse](http://www.discourse.org) is available.
+
+      Your version: %{installed_version}
+      New version: **%{new_version}**
+
+      You may want to:
+
+      - See what's new in the [GitHub changelog](https://github.com/discourse/discourse/commits/master).
+
+      - Upgrade by visiting [%{base_url}/admin/upgrade](%{base_url}/admin/upgrade), and pressing the "Upgrade" button.
+
+      - Visit [meta.discourse.org](http://meta.discourse.org) for news, discussion, and support for Discourse.
+
+      ### Release notes
+
+      %{notes}
+  "notification_types":
+    "invited_to_private_message": >-
+      %{display_username} invited you to a message: %{link}
+    "invited_to_topic": >-
+      %{display_username} invited you to a topic: %{link}
+    "private_message": >-
+      %{display_username} sent you a message: %{link}
+  "password_reset":
+    "no_token": >-
+      Sorry, that password change link is too old. Log in again and select 'I forgot my password' to get a new link.
+  "post_action_types":
+    "notify_user":
+      "long_form": >-
+        messaged user
+      "title": >-
+        Message @{{username}}
+  "privacy_topic":
+    "body": |
+      <a name="collect"></a>
+
+      ## [What information do we collect?](#collect)
+
+      We collect information from you when you register on our site and gather data when you participate in the forum by reading, writing, and evaluating the content shared here.
+
+      When registering on our site, you may be asked to enter your name and e-mail address. You may, however, visit our site without registering. Your e-mail address will be verified by an email containing a unique link. If that link is visited, we know that you control the e-mail address.
+
+      When registered and posting, we record the IP address that the post originated from. We also may retain server logs which include the IP address of every request to our server.
+
+      <a name="use"></a>
+
+      ## [What do we use your information for?](#use)
+
+      Any of the information we collect from you may be used in one of the following ways:
+
+      *   To personalize your experience &mdash; your information helps us to better respond to your individual needs.
+      *   To improve our site &mdash; we continually strive to improve our site offerings based on the information and feedback we receive from you.
+      *   To improve customer service &mdash; your information helps us to more effectively respond to your customer service requests and support needs.
+      *   To send periodic emails &mdash; The email address you provide may be used to send you information, notifications that you request about changes to topics or in response to your user name, respond to inquiries, and/or other requests or questions.
+
+      <a name="protect"></a>
+
+      ## [How do we protect your information?](#protect)
+
+      We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information.
+
+      <a name="data-retention"></a>
+
+      ## [What is your data retention policy?](#data-retention)
+
+      We will make a good faith effort to:
+
+      *   Retain server logs containing the IP address of all requests to this server no more than 90 days.
+      *   Retain the IP addresses associated with registered users and their posts no more than 5 years.
+
+      <a name="cookies"></a>
+
+      ## [Do we use cookies?](#cookies)
+
+      Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow). These cookies enable the site to recognize your browser and, if you have a registered account, associate it with your registered account.
+
+      We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We may contract with third-party service providers to assist us in better understanding our site visitors. These service providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business.
+
+      <a name="disclose"></a>
+
+      ## [Do we disclose any information to outside parties?](#disclose)
+
+      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+
+      <a name="third-party"></a>
+
+      ## [Third party links](#third-party)
+
+      Occasionally, at our discretion, we may include or offer third party products or services on our site. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+
+      <a name="coppa"></a>
+
+      ## [Children's Online Privacy Protection Act Compliance](#coppa)
+
+      Our site, products and services are all directed to people who are at least 13 years old or older. If this server is in the USA, and you are under the age of 13, per the requirements of COPPA ([Children's Online Privacy Protection Act](http://en.wikipedia.org/wiki/Children)), do not use this site.
+
+      <a name="online"></a>
+
+      ## [Online Privacy Policy Only](#online)
+
+      This online privacy policy applies only to information collected through our site and not to information collected offline.
+
+      <a name="consent"></a>
+
+      ## [Your Consent](#consent)
+
+      By using our site, you consent to our web site privacy policy.
+
+      <a name="changes"></a>
+
+      ## [Changes to our Privacy Policy](#changes)
+
+      If we decide to change our privacy policy, we will post those changes on this page.
+
+      This document is CC-BY-SA. It was last updated May 31, 2013.
+  "queue":
+    "delete_reason": >-
+      Deleted via post moderation queue
+  "reports":
+    "moderator_warning_private_messages":
+      "yaxis": >-
+        Number of messages
+    "notify_moderators_private_messages":
+      "yaxis": >-
+        Number of messages
+    "notify_user_private_messages":
+      "yaxis": >-
+        Number of messages
+    "system_private_messages":
+      "yaxis": >-
+        Number of messages
+    "user_to_user_private_messages":
+      "yaxis": >-
+        Number of messages
+  "site_settings":
+    "allow_anonymous_posting": >-
+      Allow users to switch to anonymous mode
+    "anonymous_account_duration_minutes": >-
+      To protect anonymity create a new anonymous account every N minutes for each user. Example: if set to 600, as soon as 600 minutes elapse from last post AND user switches to anon, a new anonymous account is created.
+    "anonymous_posting_min_trust_level": >-
+      Minimum trust level required to enable anonymous posting
+    "approve_post_count": >-
+      The amount of posts from a new user that must be approved
+    "approve_unless_trust_level": >-
+      Posts for users below this trust level must be approved
+    "avatar_sizes": >-
+      List of automatically generated avatar sizes.
+    "cold_age_days_high": >-
+      After this many days of conversation, the last activity date is strongly dimmed.
+    "cold_age_days_low": >-
+      After this many days of conversation, the last activity date is slightly dimmed.
+    "cold_age_days_medium": >-
+      After this many days of conversation, the last activity date is moderately dimmed.
+    "default_trust_level": >-
+      Default trust level (0-4) for all new users. WARNING! Changing this will put you at serious risk for spam.
+    "delete_drafts_older_than_n_days": >-
+      Delete drafts older than (n) days.
+    "disable_edit_notifications": >-
+      Disables edit notifications by the system user when 'download_remote_images_to_local' is active.
+    "email_domains_blacklist": >-
+      A pipe-delimited list of email domains that users are not allowed to register accounts with. Example: mailinator.com|trashmail.net
+    "email_domains_whitelist": >-
+      A pipe-delimited list of email domains that users MUST register accounts with. WARNING: Users with email domains other than those listed will not be allowed!
+    "embed_post_limit": >-
+      Maximum number of posts to embed.
+    "enable_google_oauth2_logins": >-
+      Enable Google Oauth2 authentication. This is the method of authentication that Google currently supports. Requires key and secret.
+    "enable_private_messages": >-
+      Allow trust level 1 users to create messages and reply to messages
+    "enable_sso": >-
+      Enable single sign on via an external site (WARNING: USERS' EMAIL ADDRESSES *MUST* BE VALIDATED BY THE EXTERNAL SITE!)
+    "enable_user_directory": >-
+      Provide a directory of users for browsing
+    "exclude_rel_nofollow_domains": >-
+      A list of domains where nofollow should not be added to links. tld.com will automatically allow sub.tld.com as well. As a minimum, you should add the top-level domain of this site to help web crawlers find all content. If other parts of your website are at other domains, add those too.
+    "experimental_reply_expansion": >-
+      Hide intermediate replies when expanding a reply to (experimental)
+    "full_name_required": >-
+      Full name is a required field of a user's profile.
+    "google_oauth2_client_secret": >-
+      Client secret of your Google application.
+    "max_age_unmatched_emails": >-
+      Delete unmatched screened email entries after (N) days.
+    "max_age_unmatched_ips": >-
+      Delete unmatched screened IP entries after (N) days.
+    "max_private_messages_per_day": >-
+      Maximum number of messages users can create per day.
+    "max_topic_invitations_per_day": >-
+      Maximum number of topic invitations a user can send per day.
+    "min_ban_entries_for_roll_up": >-
+      When clicking the Roll up button, will create a new subnet ban entry if there are at least (N) entries.
+    "min_private_message_post_length": >-
+      Minimum allowed post length in characters for messages
+    "min_private_message_title_length": >-
+      Minimum allowed title length for a message in characters
+    "mobile_logo_url": >-
+      The fixed position logo image used at the top left of your mobile site. If left blank `logo_url` will be used.
+    "must_approve_users": >-
+      Staff must approve all new user accounts before they are allowed to access the site. WARNING: enabling this for a live site will revoke access for existing non-staff users!
+    "s3_cdn_url": >-
+      The CDN URL to use for all s3 assets (for example: https://cdn.somewhere.com). WARNING: after changing this setting you must rebake all old posts.
+    "send_welcome_message": >-
+      Send all new users a welcome message with a quick start guide.
+    "site_contact_username": >-
+      A valid staff username to send all automated messages from. If left blank the default System account will be used.
+    "slug_generation_method": >-
+      Choose a slug generation method. 'encoded' will generate percent encoding string. 'none' will disable slug at all.
+    "sso_not_approved_url": >-
+      Redirect unapproved SSO accounts to this URL
+    "sso_overrides_name": >-
+      Overrides local full name with external site full name from SSO payload
+    "title_max_word_length": >-
+      The maximum allowed word length, in characters, in a topic title.
+    "tl2_additional_likes_per_day_multiplier": >-
+      Increase limit of likes per day for tl2 (member) by multiplying with this number
+    "tl3_additional_likes_per_day_multiplier": >-
+      Increase limit of likes per day for tl3 (regular) by multiplying with this number
+    "tl4_additional_likes_per_day_multiplier": >-
+      Increase limit of likes per day for tl4 (leader) by multiplying with this number
+  "static":
+    "search_help": |
+      <h2>Tips</h2>
+      <p>
+      <ul>
+        <li>Title matches are prioritized, so when in doubt, search for titles</li>
+        <li>Unique, uncommon words will always produce the best results</li>
+        <li>Whenever possible, scope your search to a particular category, user, or topic</li>
+      </ul>
+      </p>
+      <h2>Options</h2>
+      <p>
+        <table>
+        <tr><td><code>order:views</code></td><td><code>order:latest</code></td><td colspan=3></td></tr>
+        <tr><td><code>status:open</code></td><td><code>status:closed</code></td><td><code>status:archived</code></td><td><code>status:noreplies</code></td><td><code>status:singleuser</code></td></tr>
+        <tr><td><code>category:foo</code></td><td><code>user:foo</code></td><td colspan=3></td></tr>
+        <tr><td><code>in:likes</code></td><td><code>in:posted</code></td><td><code>in:watching</code></td><td><code>in:tracking</code></td><td><code>in:private</code></td></tr>
+        <tr><td><code>in:bookmarks</code></td><td colspan=4></td></tr>
+        </table>
+      </p>
+      <p>
+        <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
+      </p>
+  "stringex":
+    "characters":
+      "ellipsis": ""
+      "number": >-
+        -
+  "system_messages":
+    "email_error_notification":
+      "subject_template": >-
+        [%{site_name}] Email issue -- POP authentication error
+    "email_reject_auto_generated":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Auto Generated Reply
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        Your email was marked as "auto generated", which we can't accept. If you believe this is in error, contact a staff member.
+    "email_reject_destination":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Unknown To: Address
+    "email_reject_empty":
+      "subject_template": >-
+        [%{site_name}] Email issue -- No Content
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        We couldn't find any content in your email. Make sure your reply is at the top of the email -- we can't process inline replies.
+
+        If you're getting this and you _did_ include content, try again with HTML content included in your email (not just plain text only).
+    "email_reject_invalid_access":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Invalid Access
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        Your account does not have the privileges to post new topics in that category. If you believe this is in error, contact a staff member.
+    "email_reject_no_account":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Unknown Account
+    "email_reject_parsing":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Content unrecognized
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        We couldn't find your reply in the email. **Make sure your reply is at the top of the email** -- we can't process inline replies.
+    "email_reject_post_error":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Posting error
+    "email_reject_post_error_specified":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Posting error
+    "email_reject_reply_key":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Unknown Reply Key
+    "email_reject_topic_closed":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Topic Closed
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        The topic you are replying to is currently closed and no longer accepting replies. If you believe this is in error, contact a staff member.
+    "email_reject_topic_not_found":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Topic Not Found
+      "text_body_template": |
+        We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
+
+        The topic you are replying to no longer exists, perhaps it was deleted? If you believe this is in error, contact a staff member.
+    "email_reject_trust_level":
+      "subject_template": >-
+        [%{site_name}] Email issue -- Insufficient Trust Level
+    "post_hidden":
+      "text_body_template": |
+        Hello,
+
+        This is an automated message from %{site_name} to inform you that your post was hidden.
+
+        %{base_url}%{url}
+
+        %{flag_reason}
+
+        Multiple community members flagged this post before it was hidden, so please consider how you might revise your post to reflect their feedback. **You can edit your post after %{edit_delay} minutes, and it will be automatically unhidden.**
+
+        However, if the post is hidden by the community a second time, it will remain hidden until handled by staff – and there may be further action, including the possible suspension of your account.
+
+        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
+    "usage_tips":
+      "text_body_template": |
+        A few quick tips to get you started:
+
+        ## Keep scrolling
+
+        There are no next page buttons or page numbers – to read more, **just keep scrolling down!**
+
+        As new posts come in, they will appear automatically.
+
+        ## Where am I?
+
+        - For search, your user page, or the menu, use the **icon <kbd>☰</kbd> buttons at the upper right**.
+
+        - Any topic title will take you to the next unread post. Use the last activity time and post count to enter at the top or bottom.
+
+        - While reading a topic, jump to the top &uarr; by selecting the topic title. Select the green progress bar at the bottom right for full navigation controls, or use the <kbd>home</kbd> and <kbd>end</kbd> keys.
+
+            <img src="/images/welcome/progress-bar.png" width="143" height="39">
+
+        ## How do I reply?
+
+        - To reply to the overall topic, use the Reply button <img src="/images/welcome/reply-topic.png" width="29" height="25">  at the very bottom of the page.
+
+        - To reply to a specific post, use the Reply button <img src="/images/welcome/reply-post.png" width="29" height="25"> on that post.
+
+        - To take the conversation in a different direction, but keep them linked together, use <img src="/images/welcome/reply-as-linked-topic.png" width="15" height="25"> Reply as linked Topic to the right of the post.
+
+        To quote someone in your reply, select the text you wish to quote, then press any Reply button.
+
+        <img src="/images/welcome/quote-reply.png" width="350" height="129">
+
+        To ping someone in your reply, mention their name. Type `@` and an autocompleter will pop up.
+
+        <img src="/images/welcome/username-completion.png" width="230" height="131">
+
+        For [standard Emoji](http://www.emoji.codes/), just start typing `:` or the traditional smileys `:)` :smile:
+
+        ## What else can I do?
+
+        There are action buttons at the bottom of each post.
+
+        <img src="/images/welcome/like-link-flag-bookmark.png" width="169" height="46">
+
+        To let someone know that you enjoyed their post, use the **like** button. If you see a problem with a post, privately let them, or our staff, know about it with the **flag** button.
+
+        You can also **share** a link to a post, or **bookmark** it for later reference on your user page.
+
+        ## Who is talking to me?
+
+        When someone replies to your post, quotes your post, or mentions your `@username`, a number will immediately appear at the top right of the page. Use it access your **notifications**.
+
+        <img src="/images/welcome/notification-panel.png" width="178" height="59">
+
+        Don't worry about missing a reply – you'll be emailed replies (and messages) if you aren't online when they arrive.
+
+        ## When are conversations new?
+
+        By default all conversations less than two days old are considered new, and any conversation you've participated in (replied to, created, or read for an extended period) will automatically be tracked.
+
+        You will see the blue new and number indicators next to these topics:
+
+        <img src="/images/welcome/topics-new-unread.png" width="368" height="89">
+
+        You can change the individual notification state of a topic via the control at the bottom of the topic (this can also be set per category). To change how you track topics, or the definition of new, see [your user preferences](%{base_url}/my/preferences).
+
+        ## Why can't I do certain things?
+
+        New users are somewhat limited for safety reasons. As you participate here, you'll gain the trust of the community, become a full citizen, and those limitations will automatically be removed. At a high enough [trust level](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924), you'll gain even more abilities to help us manage our community together.
+    "welcome_invite":
+      "text_body_template": |
+        Thanks for accepting your invitation to %{site_name} -- welcome!
+
+        We've created a new account **%{username}** for you, and you are logged in. You can change your name by visiting [your user profile][prefs].
+
+        To log in again later:
+
+        1. Always **use the same email address from your original invitation** when logging in. Otherwise we won't be able to tell it's you!
+
+        2. Create a unique password for [your user profile][prefs], and use it to log in.
+
+        %{new_user_tips}
+
+        We believe in [civilized community behavior](%{base_url}/guidelines) at all times.
+
+        Enjoy your stay!
+
+        (If you need to communicate with [staff members](%{base_url}/about) as a new user, just reply to this message.)
+
+        [prefs]: %{user_preferences_url}
+    "welcome_user":
+      "text_body_template": |
+        Thanks for joining %{site_name}, and welcome!
+
+        %{new_user_tips}
+
+        We believe in [civilized community behavior](%{base_url}/guidelines) at all times.
+
+        Enjoy your stay!
+
+        (If you need to communicate with [staff members](%{base_url}/about) as a new user, just reply to this message.)
+  "test_mailer":
+    "text_body_template": |
+      This is a test email from
+
+      [**%{base_url}**][0]
+
+      Email deliverability is complicated. Here are a few important things you should check first:
+
+      - Be *sure* to set the `notification email` from: address correctly in your site settings. **The domain specified in the "from" address of the emails you send is the domain your email will be validated against**.
+
+      - Know how to view the raw source of the email in your mail client, so you can examine email headers for important clues. in Gmail, it is the "show original" option in the drop-down menu at the top right of each mail.
+
+      - **IMPORTANT:** Does your ISP have a reverse DNS record entered to associate the domain names and IP addresses you send mail from? [Test your Reverse PTR record][2] here. If your ISP does not enter the proper reverse DNS pointer record, it's very unlikely any of your email will be delivered.
+
+      - Is your domain's [SPF record][8] correct? [Test your SPF record][1] here. Note that TXT is the correct official record type for SPF.
+
+      - Is your domain's [DKIM record][3] correct? This will significantly improve email deliverability. [Test your DKIM record][7] here.
+
+      - If you run your own mail server, check to make sure the IPs of your mail server are [not on any email blacklists][4]. Also verify that it is definitely sending a fully-qualified hostname that resolves in DNS in its HELO message. If not, this will cause your email to be rejected by many mail services.
+
+      (The *easy* way is to create a free account on [Mandrill][md] or [Mailgun][mg] or [Mailjet][mj], which have free generous free mailing plans and will be fine for small communities. You'll still need to set up the SPF and DKIM records in your DNS, though!)
+
+      We hope you received this email deliverability test OK!
+
+      Good luck,
+
+      Your friends at [Discourse](http://www.discourse.org)
+
+      [0]: %{base_url}
+      [1]: http://www.kitterman.com/spf/validate.html
+      [2]: http://mxtoolbox.com/ReverseLookup.aspx
+      [3]: http://www.dkim.org/
+      [4]: http://whatismyipaddress.com/blacklist-check
+      [7]: http://dkimcore.org/tools/dkimrecordcheck.html
+      [8]: http://www.openspf.org/SPF_Record_Syntax
+      [md]: http://mandrill.com
+      [mg]: http://www.mailgun.com/
+      [mj]: https://www.mailjet.com/pricing
+  "time":
+    "formats":
+      "date_only": >-
+        %B %-d, %Y
+      "short": >-
+        %m-%d-%Y
+      "short_no_year": >-
+        %B %-d
+    "month_names": *1
+  "tos_topic":
+    "body": |
+      The following terms and conditions govern all use of the %{company_domain} website and all content, services and products available at or through the website, including, but not limited to, %{company_domain} Forum Software, %{company_domain} Support Forums and the %{company_domain} Hosting service ("Hosting"), (taken together, the Website). The Website is owned and operated by %{company_full_name} ("%{company_name}"). The Website is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, %{company_domain}’s [Privacy Policy](/privacy) and [Community Guidelines](/faq)) and procedures that may be published from time to time on this Site by %{company_name} (collectively, the "Agreement").
+
+      Please read this Agreement carefully before accessing or using the Website. By accessing or using any part of the web site, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Website or use any services. If these terms and conditions are considered an offer by %{company_name}, acceptance is expressly limited to these terms. The Website is available only to individuals who are at least 13 years old.
+
+      <a name="1"></a>
+
+      ## [1. Your %{company_domain} Account](#1)
+
+      If you create an account on the Website, you are responsible for maintaining the security of your account and you are fully responsible for all activities that occur under the account. You must immediately notify %{company_name} of any unauthorized uses of your account or any other breaches of security. %{company_name} will not be liable for any acts or omissions by you, including any damages of any kind incurred as a result of such acts or omissions.
+
+      <a name="2"></a>
+
+      ## [2. Responsibility of Contributors](#2)
+
+      If you post material to the Website, post links on the Website, or otherwise make (or allow any third party to make) material available by means of the Website (any such material, "Content"), You are entirely responsible for the content of, and any harm resulting from, that Content. That is the case regardless of whether the Content in question constitutes text, graphics, an audio file, or computer software. By making Content available, you represent and warrant that:
+
+      *   the downloading, copying and use of the Content will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark or trade secret rights, of any third party;
+      *   if your employer has rights to intellectual property you create, you have either (i) received permission from your employer to post or make available the Content, including but not limited to any software, or (ii) secured from your employer a waiver as to all rights in or to the Content;
+      *   you have fully complied with any third-party licenses relating to the Content, and have done all things necessary to successfully pass through to end users any required terms;
+      *   the Content does not contain or install any viruses, worms, malware, Trojan horses or other harmful or destructive content;
+      *   the Content is not spam, is not machine- or randomly-generated, and does not contain unethical or unwanted commercial content designed to drive traffic to third party sites or boost the search engine rankings of third party sites, or to further unlawful acts (such as phishing) or mislead recipients as to the source of the material (such as spoofing);
+      *   the Content is not pornographic, does not contain threats or incite violence, and does not violate the privacy or publicity rights of any third party;
+      *   your content is not getting advertised via unwanted electronic messages such as spam links on newsgroups, email lists, blogs and web sites, and similar unsolicited promotional methods;
+      *   your content is not named in a manner that misleads your readers into thinking that you are another person or company; and
+      *   you have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by %{company_name} or otherwise.
+
+      <a name="3"></a>
+
+      ## [3. User Content License](#3)
+
+      User contributions are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US). Without limiting any of those representations or warranties, %{company_name} has the right (though not the obligation) to, in %{company_name}’s sole discretion (i) refuse or remove any content that, in %{company_name}’s reasonable opinion, violates any %{company_name} policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in %{company_name}’s sole discretion. %{company_name} will have no obligation to provide a refund of any amounts previously paid.
+
+
+      <a name="4"></a>
+
+      ## [4. Payment and Renewal](#4)
+
+      ### General Terms
+
+      Optional paid services or upgrades may be available on the Website. When utilizing an optional paid service or upgrade, you agree to pay %{company_name} the monthly or annual subscription fees indicated. Payments will be charged on a pre-pay basis on the day you begin utilizing the service or upgrade and will cover the use of that service or upgrade for a monthly or annual subscription period as indicated. These fees are not refundable.
+
+      ### Automatic Renewal
+
+      Unless you notify %{company_name} before the end of the applicable subscription period that you want to cancel a service or upgrade, your subscription will automatically renew and you authorize us to collect the then-applicable annual or monthly subscription fee (as well as any taxes) using any credit card or other payment mechanism we have on record for you. Subscriptions can be canceled at any time.
+
+      <a name="5"></a>
+
+      ## [5. Services](#5)
+
+      ### Hosting, Support Services
+
+      Optional Hosting and Support services may be provided by %{company_name} under the terms and conditions for each such service. By signing up for a Hosting/Support or Support services account, you agree to abide by such terms and conditions.
+
+      <a name="6"></a>
+
+      ## [6. Responsibility of Website Visitors](#6)
+
+      %{company_name} has not reviewed, and cannot review, all of the material, including computer software, posted to the Website, and cannot therefore be responsible for that material’s content, use or effects. By operating the Website, %{company_name} does not represent or imply that it endorses the material there posted, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. The Website may contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. The Website may also contain material that violates the privacy or publicity rights, or infringes the intellectual property and other proprietary rights, of third parties, or the downloading, copying or use of which is subject to additional terms and conditions, stated or unstated. %{company_name} disclaims any responsibility for any harm resulting from the use by visitors of the Website, or from any downloading by those visitors of content there posted.
+
+      <a name="7"></a>
+
+      ## [7. Content Posted on Other Websites](#7)
+
+      We have not reviewed, and cannot review, all of the material, including computer software, made available through the websites and webpages to which %{company_domain} links, and that link to %{company_domain}. %{company_name} does not have any control over those non-%{company_domain} websites and webpages, and is not responsible for their contents or their use. By linking to a non-%{company_domain} website or webpage, %{company_name} does not represent or imply that it endorses such website or webpage. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. %{company_name} disclaims any responsibility for any harm resulting from your use of non-%{company_domain} websites and webpages.
+
+      <a name="8"></a>
+
+      ## [8. Copyright Infringement and DMCA Policy](#8)
+
+      As %{company_name} asks others to respect its intellectual property rights, it respects the intellectual property rights of others. If you believe that material located on or linked to by %{company_domain} violates your copyright, and if this website resides in the USA, you are encouraged to notify %{company_name} in accordance with %{company_name}’s [Digital Millennium Copyright Act](http://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) ("DMCA") Policy. %{company_name} will respond to all such notices, including as required or appropriate by removing the infringing material or disabling all links to the infringing material. %{company_name} will terminate a visitor’s access to and use of the Website if, under appropriate circumstances, the visitor is determined to be a repeat infringer of the copyrights or other intellectual property rights of %{company_name} or others. In the case of such termination, %{company_name} will have no obligation to provide a refund of any amounts previously paid to %{company_name}.
+
+      <a name="9"></a>
+
+      ## [9. Intellectual Property](#9)
+
+      This Agreement does not transfer from %{company_name} to you any %{company_name} or third party intellectual property, and all right, title and interest in and to such property will remain (as between the parties) solely with %{company_name}. %{company_name}, %{company_domain}, the %{company_domain} logo, and all other trademarks, service marks, graphics and logos used in connection with %{company_domain}, or the Website are trademarks or registered trademarks of %{company_name} or %{company_name}’s licensors. Other trademarks, service marks, graphics and logos used in connection with the Website may be the trademarks of other third parties. Your use of the Website grants you no right or license to reproduce or otherwise use any %{company_name} or third-party trademarks.
+
+      <a name="10"></a>
+
+      ## [10. Advertisements](#10)
+
+      %{company_name} reserves the right to display advertisements on your content unless you have purchased an Ad-free Upgrade or a Services account.
+
+      <a name="11"></a>
+
+      ## [11. Attribution](#11)
+
+      %{company_name} reserves the right to display attribution links such as ‘Powered by %{company_domain},’ theme author, and font attribution in your content footer or toolbar. Footer credits and the %{company_domain} toolbar may not be removed regardless of upgrades purchased.
+
+      <a name="12"></a>
+
+      ## [12. Changes](#12)
+
+      %{company_name} reserves the right, at its sole discretion, to modify or replace any part of this Agreement. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Website following the posting of any changes to this Agreement constitutes acceptance of those changes. %{company_name} may also, in the future, offer new services and/or features through the Website (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.
+
+      <a name="13"></a>
+
+      ## [13. Termination](#13)
+
+      %{company_name} may terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. If you wish to terminate this Agreement or your %{company_domain} account (if you have one), you may simply discontinue using the Website. All provisions of this Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+      <a name="14"></a>
+
+      ## [14. Disclaimer of Warranties](#14)
+
+      The Website is provided "as is". %{company_name} and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither %{company_name} nor its suppliers and licensors, makes any warranty that the Website will be error free or that cess thereto will be continuous or uninterrupted. If you’re actually reading this, here’s [a treat](http://www.newyorker.com/online/blogs/shouts/2012/12/the-hundred-best-lists-of-all-time.html). You understand that you download from, or otherwise obtain content or services through, the Website at your own discretion and risk.
+
+      <a name="15"></a>
+
+      ## [15. Limitation of Liability](#15)
+
+      In no event will %{company_name}, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; (ii) the cost of procurement for substitute products or services; (iii) for interruption of use or loss or corruption of data; or (iv) for any amounts that exceed the fees paid by you to %{company_name} under this agreement during the twelve (12) month period prior to the cause of action. %{company_name} shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.
+
+      <a name="16"></a>
+
+      ## [16. General Representation and Warranty](#16)
+
+      You represent and warrant that (i) your use of the Website will be in strict accordance with the %{company_name} [Privacy Policy](/privacy), [Community Guidelines](/guidelines), with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the country in which this website resides or the country in which you reside) and (ii) your use of the Website will not infringe or misappropriate the intellectual property rights of any third party.
+
+      <a name="17"></a>
+
+      ## [17. Indemnification](#17)
+
+      You agree to indemnify and hold harmless %{company_name}, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys’ fees, arising out of your use of the Website, including but not limited to your violation of this Agreement.
+
+      <a name="18"></a>
+
+      ## [18. Miscellaneous](#18)
+
+      This Agreement constitutes the entire agreement between %{company_name} and you concerning the subject matter hereof, and they may only be modified by a written amendment signed by an authorized executive of %{company_name}, or by the posting by %{company_name} of a revised version. Except to the extent applicable law, if any, provides otherwise, this Agreement, any access to or use of the Website will be governed by the laws of the state of California, U.S.A., excluding its conflict of law provisions, and the proper venue for any disputes arising out of or relating to any of the same will be the state and federal courts located in San Francisco County, California. Except for claims for injunctive or equitable relief or claims regarding intellectual property rights (which may be brought in any competent court without the posting of a bond), any dispute arising under this Agreement shall be finally settled in accordance with the Comprehensive Arbitration Rules of the Judicial Arbitration and Mediation Service, Inc. (“JAMS”) by three arbitrators appointed in accordance with such Rules. The arbitration shall take place in San Francisco, California, in the English language and the arbitral decision may be enforced in any court. The prevailing party in any action or proceeding to enforce this Agreement shall be entitled to costs and attorneys’ fees. If any part of this Agreement is held invalid or unenforceable, that part will be construed to reflect the parties’ original intent, and the remaining portions will remain in full force and effect. A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. You may assign your rights under this Agreement to any party that consents to, and agrees to be bound by, its terms and conditions; %{company_name} may assign its rights under this Agreement without condition. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and permitted assigns.
+
+      This document is CC-BY-SA. It was last updated May 31, 2013.
+
+      Originally adapted from the [WordPress Terms of Service](http://en.wordpress.com/tos/).
+  "user":
+    "ip_address":
+      "blocked": >-
+        New registrations are not allowed from your IP address.
+      "max_new_accounts_per_registration_ip": >-
+        New registrations are not allowed from your IP address (maximum limit reached). Contact a staff member.
+  "user_notifications":
+    "admin_login":
+      "subject_template": >-
+        [%{site_name}] Login
+      "text_body_template": |
+        Somebody asked to login to your account on [%{site_name}](%{base_url}).
+
+        If you did not make this request, you can safely ignore this email.
+
+        Click the following link to login:
+        %{base_url}/users/admin-login/%{email_token}
+    "digest":
+      "subject_template": >-
+        [%{site_name}] Digest
+    "set_password":
+      "text_body_template": |
+        Somebody asked to add a password to your account on [%{site_name}](%{base_url}). Alternatively, you can log in using any supported online service (Google, Facebook, etc) that is associated with this validated email address.
+
+        If you did not make this request, you can safely ignore this email.
+
+        Click the following link to choose a password:
+        %{base_url}/users/password-reset/%{email_token}
+    "signup_after_approval":
+      "text_body_template": |
+        Welcome to %{site_name}!
+
+        A staff member approved your account on %{site_name}.
+
+        Click the following link to confirm and activate your new account:
+        %{base_url}/users/activate-account/%{email_token}
+
+        If the above link is not clickable, try copying and pasting it into the address bar of your web browser.
+
+        %{new_user_tips}
+
+        We believe in [civilized community behavior](%{base_url}/guidelines) at all times.
+
+        Enjoy your stay!
+
+        (If you need to communicate with [staff members](%{base_url}/about) as a new user, just reply to this message.)
+    "user_invited_to_private_message_pm":
+      "subject_template": >-
+        [%{site_name}] %{username} invited you to a message '%{topic_title}'
+      "text_body_template": |2
+
+        %{username} invited you to a message
+
+        > **%{topic_title}**
+        >
+        > %{topic_excerpt}
+
+        at
+
+        > %{site_title} -- %{site_description}
+
+        Please visit this link to view the message: %{base_url}%{url}
+    "user_invited_to_topic":
+      "subject_template": >-
+        [%{site_name}] %{username} invited you to a topic '%{topic_title}'
+      "text_body_template": |2
+
+        %{username} invited you to a discussion
+
+        > **%{topic_title}**
+        >
+        > %{topic_excerpt}
+
+        at
+
+        > %{site_title} -- %{site_description}
+
+        Please visit this link to view the message: %{base_url}%{url}
