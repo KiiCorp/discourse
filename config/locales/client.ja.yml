@@ -642,6 +642,7 @@ ja:
       title_placeholder: "このディスカッションを簡潔に説明してください。"
       edit_reason_placeholder: "編集する理由は何ですか?"
       show_edit_reason: "(編集理由を追加)"
+      reply_placeholder: "ここの入力してください。Markdown、BBCode、HTMLフォーマットが利用可能です。画像をドラッグまたは貼付けるとアップロードできます。"
       view_new_post: "新規ポストを見る。"
       saving: "保存中..."
       saved: "保存完了!"
@@ -1349,7 +1350,7 @@ ja:
         this_month: "今月"
         this_week: "今週"
         today: "本日"
-        other_periods: "トップとピックをもっと見る"
+        other_periods: "トップトピックをもっと見る"
     browser_update: '<a href="http://www.discourse.org/faq/#browser">ここで動作するにはブラウザのバージョンが古すぎます。</a> 。 <a href="http://browsehappy.com">ここでブラウザアップグレード</a>.'
     permission_types:
       full: "作成できる / 回答できる / 閲覧できる"
@@ -2142,7 +2143,7 @@ ja:
       badge:
         editor:
           name: 編集者
-          description: 最初のポスト編集
+          description: はじめてポストを編集した。
         basic_user:
           name: ベーシックユーザ
           description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">Granted</a> all essential community functions
@@ -2157,61 +2158,70 @@ ja:
           description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Granted</a> global edit, pin, close, archive, split and merge
         welcome:
           name: ようこそ
-          description: 「いいね！」を受けました
+          description: 「いいね！」をもらった。
         autobiographer:
           name: Autobiographer
-          description: Filled user <a href="/my/preferences">profile</a> information
+          description: <a href="/my/preferences">プロフィール</a> 情報を書いた。
         anniversary:
           name: アニバーサリー
-          description: 今年一度でも投稿したアクティブメンバー
+          description: 今年一度でも投稿した
         nice_post:
-          name: 良いポスト
-          description: 10人に「いいね！」をされました。このバッジは何度でももらえます。
+          name: ナイス投稿
+          description: 投稿が10人に「いいね！」をされた。このバッジは何度でももらえます。
         good_post:
-          name: 良い投稿！
-          description: 25人に「いいね！」をされました。このバッジは何度でももらえます。
+          name: 良い投稿
+          description: 投稿が25人に「いいね！」をされた。このバッジは何度でももらえます。
         great_post:
-          name: 素晴らしい投稿！
-          description: 50人に「いいね！」をされました。このバッジは何度でももらえます。
+          name: 素晴らしい投稿
+          description: 投稿が50人に「いいね！」をされた。このバッジは何度でももらえます。
         nice_topic:
           name: ナイストピック
-          description: トピックが10回「いいね！」されました。このバッジは何度でももらえます
+          description: トピックが10回「いいね！」された。このバッジは何度でももらえます。
         good_topic:
-          name: グッドトピック
-          description: トピックが25回「いいね！」されました。このバッジは何度でももらえます
+          name: 良いトピック
+          description: トピックが25回「いいね！」された。このバッジは何度でももらえます。
         great_topic:
-          name: グレートトピック
-          description: トピックが50回「いいね！」されました。このバッジは何度でももらえます
+          name: 素晴らしいトピック
+          description: トピックが50回「いいね！」された。このバッジは何度でももらえます。
         nice_share:
           name: ナイスシェア
-          description: 25人の訪問者にポストがシェアされました
+          description: 投稿が25人の訪問者にシェアされた。
         good_share:
-          name: グッドシェア
-          description: 300人の訪問者にポストがシェアされました
+          name: 良いシェア
+          description: 投稿が300人の訪問者にシェアされた。
         great_share:
-          name: グレートシェア
-          description: 1000人の訪問者にポストがシェアされました
+          name: 素晴らしいシェア
+          description: 投稿が1000人の訪問者にシェアされた。
         first_like:
           name: 初めての「いいね！」
-          description: 投稿に「いいね！」した
+          description: 投稿に「いいね！」した。
         first_flag:
-          name: 最初のフラッグ
-          description: 投稿にフラッグをつけた
+          name: 最初のフラグ
+          description: 投稿にフラグをつけた。
+        promoter:
+          name: プロモーター
+          description: ユーザを一人招待した。
+        campaigner:
+          name: 活動家
+          description: ユーザを三人招待した。
+        champion:
+          name: チャンピョン
+          description: ユーザを十人招待した。
         first_share:
           name: 初めてのシェア
-          description: 投稿をシェアした
+          description: 投稿をシェアした。
         first_link:
           name: 最初のリンク
-          description: サイト内投稿のリンクを挿入した
+          description: サイト内の別投稿へのリンクを挿入した。
         first_quote:
-          name: 最初の投稿
-          description: ユーザにタグ付けました
+          name: 最初の引用
+          description: ユーザを引用した。
         read_guidelines:
-          name: ガイドラインを読んだ
-          description: <a href="/guidelines">community guidelines</a>を読みました
+          name: ガイドライン既読
+          description: <a href="/guidelines">コミュニティのガイドライン</a>を読んだ。
         reader:
           name: 閲覧者
-          description: 100以上の投稿があるトピック内の投稿をすべて読みました。
+          description: 100以上の投稿があるトピック内の投稿をすべて読んだ。
     google_search: |
       <h2>Googleで探す</h2>
       <p>
