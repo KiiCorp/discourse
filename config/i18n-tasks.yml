@@ -34,7 +34,8 @@ data:
   yaml:
     write:
       # do not wrap lines at 80 characters
-      line_width: -1
+      line_width: 80
+      canonical: false
 
   ## Pretty-print JSON:
   # json:
