@@ -1958,7 +1958,111 @@ ja:
   privacy_topic:
     title: "プライバシーポリシー"
 
+  static:
+    search_help: |
+      <h2>ヒント</h2>
+      <p>
+      <ul>
+        <li>タイトルは優先的に検索にヒットします。</li>
+        <li>ユニークで一般的ではない単語で検索するとよい結果になります。</li>
+        <li>可能な場合は特定のカテゴリやユーザ、トピックに絞って検索を行いましょう。</li>
+      </ul>
+      </p>
+      <h2>利用可能なオプション</h2>
+      <p>
+        <table>
+        <tr><td><code>order:views</code></td><td><code>order:latest</code></td><td colspan=3></td></tr>
+        <tr><td><code>status:open</code></td><td><code>status:closed</code></td><td><code>status:archived</code></td><td><code>status:noreplies</code></td><td><code>status:singleuser</code></td></tr>
+        <tr><td><code>category:foo</code></td><td><code>user:foo</code></td><td colspan=3></td></tr>
+        <tr><td><code>in:likes</code></td><td><code>in:posted</code></td><td><code>in:watching</code></td><td><code>in:tracking</code></td><td><code>in:private</code></td></tr>
+        <tr><td><code>in:bookmarks</code></td><td colspan=4></td></tr>
+        </table>
+      </p>
+      <p>
+        一例として <code>rainbows category:parks status:open order:latest</code> は、カテゴリ "parks" より "rainbows" という単語を含み、かつクローズやアーカイブされていないトピックを検索します。また検索結果は最終投稿の日時によりソートされます。
+      </p>
+
+  badges:
+    long_descriptions:
+      autobiographer: |
+        Blah blah blah
+        Blah blah blah
+      first_like: |
+        Blah blah blah
+        Blah blah blah
+      first_link: |
+        Blah blah blah
+        Blah blah blah
+      first_quote: |
+        Blah blah blah
+        Blah blah blah
+      first_share: |
+        Blah blah blah
+        Blah blah blah
+      read_guidelines: |
+        Blah blah blah
+        Blah blah blah
+      reader: |
+        Blah blah blah
+        Blah blah blah
+      editor: |
+        Blah blah blah
+        Blah blah blah
+      first_flag: |
+        Flagging is critical to the health of your community. If you notice any posts that require moderator attention please
+        do not hesitate to flag. You may also use the flagging dialog to send <b>messages</b> to users once you reach
+        trust level 1.
+      nice_share: |
+        Blah blah blah
+        Blah blah blah
+      welcome: |
+        Blah blah blah
+        Blah blah blah
+      anniversary: |
+        Blah blah blah
+        Blah blah blah
+      good_share: |
+        Blah blah blah
+        Blah blah blah
+      great_share: |
+        Blah blah blah
+        Blah blah blah
+      nice_post: |
+        Blah blah blah
+        Blah blah blah
+      nice_topic: |
+        Blah blah blah
+        Blah blah blah
+      good_post: |
+        Blah blah blah
+        Blah blah blah
+      good_topic: |
+        Blah blah blah
+        Blah blah blah
+      great_post: |
+        Blah blah blah
+        Blah blah blah
+      great_topic: |
+        Blah blah blah
+        Blah blah blah
+      basic: |
+        Blah blah blah
+        Blah blah blah
+      member: |
+        Blah blah blah
+        Blah blah blah
+      regular: |
+        Blah blah blah
+        Blah blah blah
+      leader: |
+        Blah blah blah
+        Blah blah blah
+
   admin_login:
+    success: "メール送信t"
     error: "エラー！"
     email_input: "アドミンメール"
     submit_button: "メールを送信する"
+
+  discourse_hub:
+    access_token_problem: "管理者に連絡してください：サイト設定を更新し、正しい discourse_org_access_key を指定してください。"

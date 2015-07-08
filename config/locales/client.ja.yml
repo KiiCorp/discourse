@@ -168,13 +168,16 @@ ja:
     failed: "失敗"
     switch_to_anon: "匿名モード"
     switch_from_anon: "匿名モード停止"
+
     banner:
       close: "バナーを閉じる"
+
     choose_topic:
       none_found: "トピックが見つかりませんでした"
       title:
         search: "トピック名、URL、または ID でトピックを検索:"
         placeholder: "ここにトピックのタイトルを入力"
+
     queue:
       topic: "トピック："
       approve: '承認'
@@ -189,10 +192,15 @@ ja:
         one: "このトピックは<b>1</b>個の投稿が承認待ちです。"
         many: "このトピックは<b>{{count}}</b>個の投稿が承認待ちです。"
       confirm: "変更を保存"
+      delete_prompt: "本当に <b>%{username}</b> を削除しますか？削除すると、このユーザの全ての投稿が削除され、このユーザのメールアドレスとIPアドレスがブロックされます。"
       approval:
         title: "この投稿は承認が必要"
         description: "投稿された新規のポストは受付されましたがモデレータによる承認が必要です。もう少々お待ち下さい。"
+        pending_posts:
+          one: "保留中の投稿が <strong>1件</strong> あります。"
+          other: "保留中の投稿が <strong>{{count}}件</strong> あります。"
         ok: "実行"
+
     user_action:
       user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> が <a href='{{topicUrl}}'>トピック</a> を作成"
       you_posted_topic: "<a href='{{userUrl}}'>あなた</a> が <a href='{{topicUrl}}'>トピック</a> を作成"
@@ -285,6 +293,7 @@ ja:
       topics_entered: "Topics Entered"
       post_count: "# ポスト"
       confirm_delete_other_accounts: "これらのアカウントを削除してよいですか？"
+
     user:
       said: "{{username}}:"
       profile: "プロフィール"
@@ -304,6 +313,7 @@ ja:
       dismiss_notifications: "全て既読にする"
       dismiss_notifications_tooltip: "全ての未読の通知を既読にします"
       disable_jump_reply: "返信したあとに投稿に移動しない"
+      dynamic_favicon: "ブラウザアイコンに新規/更新ありトピックのカウントを表示する"
       edit_history_public: "投稿編集履歴を公開する"
       external_links_in_new_tab: "外部リンクを全て新しいタブで開く"
       enable_quoting: "ハイライトしたテキストを引用して回答する"
@@ -331,37 +341,48 @@ ja:
       users: "ユーザ"
       muted_users: "ミュート"
       muted_users_instructions: "これらのユーザからの全ての通知を抑制します"
+
       staff_counters:
         flags_given: "役に立ったフラグ"
         flagged_posts: "フラグを立てたポスト"
         deleted_posts: "削除したポスト"
-        warnings_received: "注意"
+        suspensions: "停止"
+        warnings_received: "警告"
+
       messages:
         all: "すべて"
         mine: "受信トレイ"
         unread: "未読"
+
       change_password:
         success: "(メールを送信しました)"
         in_progress: "(メールを送信中)"
         error: "(エラー)"
         action: "パスワードリセット用メールを送信する"
         set_password: "パースワードを設定する"
+
       change_about:
         title: "自己紹介の変更"
+        error: "値の変更時にエラーが発生しました。"
+
       change_username:
         title: "ユーザ名の変更"
         confirm: "ユーザ名を変更すると、あなたのポストの引用と @ユーザ名でタグ付けされたリンクが解除されます。本当にユーザ名を変更しますか？"
         taken: "このユーザ名は既に使われています。"
         error: "ユーザ名変更中にエラーが発生しました。"
         invalid: "このユーザ名は無効です。英数字のみ利用可能です。"
+
       change_email:
         title: "メールドレスの変更"
         taken: "このメールアドレスは既に使われています。"
         error: "メールアドレス変更中にエラーが発生しました。既にこのアドレスが使われているのかもしれません。"
         success: "このアドレスにメールを送信しました。メールの指示に従って確認処理を行ってください。"
+
       change_avatar:
         title: "プロフィール画像を変更"
-        refresh_gravatar_title: "グラバターを更新する"
+        gravatar: "<a href='//gravatar.com/emails' target='_blank'>Gravatar</a>, based on"
+        gravatar_title: "Gravatarウェブサイト上のアバターを変更"
+        refresh_gravatar_title: "Gravatarを更新"
         letter_based: "システムプロフィール画像"
         uploaded_avatar: "カスタム画像"
         uploaded_avatar_empty: "カスタム画像を追加"
@@ -488,6 +509,7 @@ ja:
         title: "登録したときのIPアドレス"
       avatar:
         title: "プロフィール画像"
+        header_title: "プロフィール、メッセージ、ブックマーク、および設定"
       title:
         title: "タイトル"
       filters:
@@ -520,7 +542,10 @@ ja:
     logout: "ログアウトしました"
     refresh: "Refresh"
     read_only_mode:
+      enabled: "読み取り専用モードになりました。引き続きサイトの閲覧はできますが、いくつかの機能が正しく動作しない可能性があります。"
       login_disabled: "読み取り専用モードにされています。ログインできません。"
+    too_few_topics_notice: "ディスカッションを開始するために、最低でもパブリックなトピックを5件、パブリックな回答を %{posts}件作成してください。これらのコンテンツは、新規ユーザがトラストレベルを稼ぐために必要です。このメッセージはスタッフのみに表示されます。"
+
     learn_more: "より詳しく..."
     year: '年'
     year_desc: '過去365日間に投稿されたトピック'
@@ -623,13 +648,16 @@ ja:
       saved_local_draft_tip: "ローカルに保存しました"
       similar_topics: "このトピックに似ているトピック..."
       drafts_offline: "オフラインで下書き"
+
       error:
         title_missing: "タイトルを入力してください。"
         title_too_short: "タイトルは{{min}}文字以上必要です。"
         title_too_long: "タイトルは最長で{{max}}未満です。"
         post_missing: "ポスト内容が空です。"
+        try_like: '<i class="fa fa-heart"></i> ボタンを試してみましたか？'
         post_length: "ポストは{{min}}文字以上必要です。"
         category_missing: "カテゴリを選択してください。"
+
       save_edit: "編集内容を保存"
       reply_original: "元のトピックに回答"
       reply_here: "ここに回答"
@@ -675,16 +703,19 @@ ja:
       redo_title: "やり直し"
       help: "Markdown 編集のヘルプ"
       toggler: "編集パネルの表示/非表示"
+
       admin_options_title: "このトピックの詳細設定"
       auto_close:
         label: "このトピックを自動的に終了する時間:"
         error: "正しい値を入力してください。"
         based_on_last_post: "このトピックの最新のポストが古くなるまでは終了しない"
         all:
+          units: ""
           examples: '時間 (例: 24), 時刻(例: 17:30 ), タイムスタンプ(2013-11-22 14:00) を入力してください'
         limited:
           units: "(# of hours)"
           examples: '時間(24)を入力してください'
+
     notifications:
       title: "@ユーザ名のタグ付けやあなたが投稿した記事やトピックやメッセージなどに対する回答に関する通知"
       none: "通知はありません"
@@ -703,9 +734,15 @@ ja:
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
       linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
       granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p> {{description}}バッジを付けられました</p>"
+
       popup:
-        mentioned: '{{username}} があなたをタグ付けしました "{{topic}}" - {{site_title}}'
-        posted: '{{username}} が投稿しました "{{topic}}" - {{site_title}}'
+        mentioned: '{{username}} が "{{topic}}" - {{site_title}} であなたをタグ付けしました'
+        quoted: '{{username}} が "{{topic}}" - {{site_title}} であなたを引用しました'
+        replied: '{{username}} が "{{topic}}" - {{site_title}} であなたに回答しました'
+        posted: '{{username}} が "{{topic}}" - {{site_title}} に投稿しました'
+        private_message: '{{username}} が "{{topic}}" - {{site_title}} であなたにプライベートメッセージを送信しました'
+        linked: '{{username}} linked to your post from "{{topic}}" - {{site_title}}'
+
     upload_selector:
       title: "画像のアップロード"
       title_with_attachments: "画像/ファイルをアップロード"
@@ -813,7 +850,25 @@ ja:
       toggle_information: "トピック詳細をトグル"
       read_more_in_category: "{{catLink}} の他のトピックを見る or {{latestLink}}。"
       read_more: "{{catLink}} or {{latestLink}}。"
+
+      # keys ending with _MF use message format, see /spec/components/js_local_helper_spec.rb for samples
+      read_more_MF: "There {
+        UNREAD, plural,
+        =0 {}
+        one {
+          is <a href='/unread'>1 unread</a>
+        } other {
+          are <a href='/unread'># unread</a>
+        }
+        } {
+          NEW, plural,
+            =0 {}
+            one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> topic}
+            other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> topics}
+        } remaining, or {CATEGORY, select, true {browse other topics in {catLink}} false {{latestLink}} other {}}"
+
       browse_all_categories: 全てのカテゴリを閲覧する
+
       view_latest_topics: 最新のトピックを見る
       suggest_create_topic: 新しいトピックを作成しますか？
       jump_reply_up: 以前の回答へジャンプ
@@ -824,15 +879,18 @@ ja:
       auto_close_title: '自動終了設定'
       auto_close_save: "保存"
       auto_close_remove: "このトピックを自動終了しない"
+
       progress:
         title: トピック進捗
         go_top: "上"
         go_bottom: "下"
         go: "へ"
+        jump_bottom: "最後の投稿にジャンプ"
         jump_bottom_with_number: "投稿%{post_number}にジャンプ"
         total: ポスト総数
         current: 現在のポスト
         position: "投稿%{current}/%{total}"
+
       notifications:
         reasons:
           '3_6': 'このカテゴリに参加中のため通知されます'
@@ -873,6 +931,7 @@ ja:
         muted:
           title: "ミュート"
           description: "このトピックについての通知を受け取りません。また、未読タブにも通知されません。"
+
       actions:
         recover: "トピック削除の取り消し"
         delete: "トピック削除"
@@ -887,9 +946,14 @@ ja:
         invisible: "リストされないようにする"
         visible: "リストする"
         reset_read: "読み込みデータをリセット"
+
       feature:
-        pin: "トピックをピンで留める。。。"
-        unpin: "トピックをピンで留める。。。"
+        pin: "トピックをピン留めする"
+        unpin: "トピックのピン留めを解除する"
+        pin_globally: "トピックをグローバルにピン留めする"
+        make_banner: "トピックバナーを追加する"
+        remove_banner: "トピックバナーを削除する"
+
       reply:
         title: '回答'
         help: 'このトピックに回答する'
@@ -928,6 +992,7 @@ ja:
       inviting: "招待中..."
       automatically_add_to_groups_optional: "この招待によって、リストされたグループに参加することができます。"
       automatically_add_to_groups_required: "この招待によって、リストされたグループに参加することができます。"
+
       invite_private:
         title: 'メッセージへの参加を招待する'
         email_or_username: "招待するユーザのメールアドレスまたはユーザ名"
@@ -936,13 +1001,23 @@ ja:
         success: "ユーザにメッセージへの参加を招待しました。"
         error: "申し訳ありませんが、ユーザ招待中にエラーが発生しました。"
         group_name: "グループ名"
+
       invite_reply:
         title: '友人を招待して回答してもらう'
         username_placeholder: "ユーザ名"
         action: '招待状を送る'
         help: 'このトピックに他のユーザをメールまたは通知で招待する。'
         to_forum: "ログインしなくてもこの投稿に返信ができることを、あなたの友人に知らせます。"
+        sso_enabled: "このトピックに招待したい人のユーザ名を入力してください。"
+        to_topic_blank: "このトピックに招待したい人のユーザ名かメールアドレスを入力してください。"
+        to_topic_email: "You've entered an email address. We'll email an invitation that allows your friend to immediately reply to this topic."
+        to_topic_username: "You've entered a username. We'll send a notification to that user with a link inviting them to this topic."
+        to_username: "Enter the username of the person you'd like to invite. We'll send a notification to that user with a link inviting them to this topic."
         email_placeholder: 'name@example.com'
+        success_email: "We mailed out an invitation to <b>{{emailOrUsername}}</b>. We'll notify you when the invitation is redeemed. Check the invitations tab on your user page to keep track of your invites."
+        success_username: "We've invited that user to participate in this topic."
+        error: "Sorry, we couldn't invite that person. Perhaps they have already been invited? (Invites are rate limited)"
+
       login_reply: 'ログインして返信'
       filters:
         n_posts:
@@ -980,9 +1055,12 @@ ja:
         deselect_all: 全ての選択を外す
         description:
           other: 現在<b>{{count}}</b>個のポストを選択中。
+
     post:
+      reply: "{{link}} {{replyAvatar}} {{username}} に回答中"
       reply_topic: "{{link}} に回答"
       quote_reply: "引用して回答"
+      edit: "{{link}} {{replyAvatar}} {{username}} を編集中"
       edit_reason: "理由: "
       post_number: "ポスト{{number}}"
       last_edited_on: "ポストの最終編集日"
@@ -994,6 +1072,9 @@ ja:
       deleted_by_author:
         other: "(ポストは執筆者により取り下げられました。フラグがつかない場合%{count}時間後に自動的に削除されます)"
       expand_collapse: "展開/折りたたみ"
+      gap:
+        one: "表示されていない1件の回答を読む"
+        other: "表示されてない{{count}}件の回答を読む"
       more_links: "{{count}} つリンク..."
       unread: "未読ポスト"
       has_replies:
@@ -1019,6 +1100,7 @@ ja:
         about: "この投稿は「Wiki」である。ベーシックユーザが編集できます。"
       archetypes:
         save: '保存オプション'
+
       controls:
         reply: "このポストに対する回答の編集を開始"
         like: "この投稿に「いいね！」する"
@@ -1043,6 +1125,7 @@ ja:
         revert_to_regular: "スタッフ色を削除"
         rebake: "HTML再建築"
         unhide: "表示する"
+
       actions:
         flag: 'フラグ'
         defer_flags:
@@ -1063,14 +1146,16 @@ ja:
           like: "「いいね！」を取り消す"
           vote: "投票を取り消す"
         people:
-          off_topic: "{{icons}} オフトピックとしてマーク"
-          spam: "{{icons}} スパムとしてマーク"
-          spam_with_url: "{{icons}} <a href='{{postUrl}}'>スパムとして</a>フラグ付き"
-          inappropriate: "{{icons}} 不適切であると報告するフラグを立つ"
+          off_topic: "{{icons}} がオフトピックとしてフラグを立てました"
+          spam: "{{icons}} がスパムとしてフラグを立てました"
+          spam_with_url: "{{icons}} が<a href='{{postUrl}}'>スパムとして</a>フラグを立てました"
+          inappropriate: "{{icons}} が不適切であるとフラグを立てました"
           notify_moderators: "{{icons}} がモデレータに通報しました"
-          notify_moderators_with_url: "{{icons}} <a href='{{postUrl}}'>通知されたモデレータ</a>"
+          notify_moderators_with_url: "{{icons}} が<a href='{{postUrl}}'>モデレータに通報しました</a>"
+          notify_user: "{{icons}} がメッセージを送信しました"
+          notify_user_with_url: "{{icons}} が <a href='{{postUrl}}'>メッセージ</a>を送信しました"
           bookmark: "{{icons}} がブックマークしました"
-          like: "{{icons}} が「いいね！」しています"
+          like: "{{icons}} が「いいね！」しました"
           vote: "{{icons}} が投票しました"
         by_you:
           off_topic: "オフトピックのフラグを立てました"
@@ -1083,36 +1168,54 @@ ja:
           vote: "あなたがこのポストに投票しました"
         by_you_and_others:
           off_topic:
+            one: "あなたと他1人がオフトピックであるとフラグを立てました"
             other: "あなたと他{{count}}人がオフトピックであるとフラグを立てました"
           spam:
+            one: "あなたと他1人がスパムであるとフラグを立てました"
             other: "あなたと他{{count}}人がスパムであるとフラグを立てました"
           inappropriate:
+            one: "あなたと他1人が不適切であるとフラグを立てました"
             other: "あなたと他{{count}}人が不適切であるとフラグを立てました"
           notify_moderators:
+            one: "あなたと他1人がモデレータ確認を要するとフラグを立てました"
             other: "あなたと他{{count}}人がモデレータ確認を要するとフラグを立てました"
           notify_user:
+            one: "あなたと他1人がこのユーザにメッセージを送信しました"
             other: "あなたと他{{count}}人がこのユーザにメッセージを送信しました"
           bookmark:
-            other: "あなたと他{{count}}人がこのポストをブックマークしました"
+            one: "あなたと他1人がこの投稿をブックマークしました"
+            other: "あなたと他{{count}}人がこの投稿をブックマークしました"
           like:
+            one: "あなたと他1人が「いいね！」しました"
             other: "あなたと他{{count}}人が「いいね！」しました"
           vote:
-            other: "あなたと他{{count}}人がこのポストに投票しました"
+            one: "あなたと他1人がこの投稿に投票しました"
+            other: "あなたと他{{count}}人がこの投稿に投票しました"
         by_others:
           off_topic:
-            other: "{{count}}人のユーザがオフトピックであるとフラグを立てました"
+            one: "1人がオフトピックであるとフラグを立てました"
+            other: "{{count}}人がオフトピックであるとフラグを立てました"
           spam:
-            other: "{{count}}人のユーザがスパムであるとフラグを立てました"
+            one: "1人がスパムであるとフラグを立てました"
+            other: "{{count}}人がスパムであるとフラグを立てました"
           inappropriate:
-            other: "{{count}}人のユーザが不適切であるとフラグを立てました"
+            one: "1人が不適切であるとフラグを立てました"
+            other: "{{count}}人が不適切であるとフラグを立てました"
           notify_moderators:
-            other: "{{count}}人のユーザがモデレータ確認を要するとフラグを立てました"
+            one: "1人がモデレータ確認を要するとフラグを立てました"
+            other: "{{count}}人がモデレータ確認を要するとフラグを立てました"
+          notify_user:
+            one: "1人がこのユーザにメッセージを送信しました"
+            other: "{{count}}人がこのユーザにメッセージを送信しました"
           bookmark:
-            other: "{{count}}人のユーザがこのポストをブックマークしました"
+            one: "1人がこの投稿をブックマークしました"
+            other: "{{count}}人がこの投稿をブックマークしました"
           like:
-            other: "{{count}}人のユーザが「いいね！」しました"
+            one: "1人が「いいね！」しました"
+            other: "{{count}}人が「いいね！」しました"
           vote:
-            other: "{{count}}人のユーザがこのポストに投票しました"
+            one: "1人がこの投稿に投票しました"
+            other: "{{count}}人がこの投稿に投票しました"
       edits:
         one: 1回編集
         other: "{{count}}回編集"
@@ -1128,6 +1231,7 @@ ja:
           last: "最後のリビジョン"
           hide: "リビジョンを隠す"
           show: "リビジョンを表示"
+          comparing_previous_to_current_out_of_total: "<strong>{{previous}}</strong> <i class='fa fa-arrows-h'></i> <strong>{{current}}</strong> / {{total}}"
         displays:
           inline:
             title: "追加・削除箇所をインラインで表示"
