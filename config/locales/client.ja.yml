@@ -20,15 +20,15 @@ ja:
             tb: TB
     dates:
       time: "h:mm a"
-      long_no_year: "MMM D h:mm a"
-      long_no_year_no_time: "MMM D"
-      long_with_year: "MMM D, YYYY h:mm a"
-      long_with_year_no_time: "MMM D, YYYY"
-      long_date_with_year: "MMM D, 'YY LT"
-      long_date_without_year: "MMM D, LT"
-      long_date_with_year_without_time: "MMM D, 'YY"
-      long_date_without_year_with_linebreak: "MMM D <br/>LT"
-      long_date_with_year_with_linebreak: "MMM D, 'YY <br/>LT"
+      long_no_year: "MMM D日 h:mm a"
+      long_no_year_no_time: "MMM D日"
+      long_with_year: "YYYY年 MMM D日 h:mm a"
+      long_with_year_no_time: "YYYY年 MMM D日"
+      long_date_with_year: "MMM D日, 'YY LT"
+      long_date_without_year: "MMM D日, LT"
+      long_date_with_year_without_time: "MMM D日, 'YY"
+      long_date_without_year_with_linebreak: "MMM D日 <br/>LT"
+      long_date_with_year_with_linebreak: "MMM D日, 'YY <br/>LT"
       tiny:
         half_a_minute: "< 1分"
         less_than_x_seconds:
@@ -151,7 +151,7 @@ ja:
       user_count: "新規ユーザ"
       active_user_count: "アクティブユーザ"
       contact: "問い合わせ"
-      contact_info: "このサイトに影響を与える重要な問題や緊急の問題が発生した場合は、 ％{ contact_info }までご連絡ください"
+      contact_info: "このサイトに影響を与える重要な問題や緊急の問題が発生した場合は %{ contact_info }までご連絡ください"
     bookmarked:
       title: "ブックマーク"
       clear_bookmarks: "ブックマークをクリア"
@@ -512,7 +512,7 @@ ja:
         title: "招待"
         user: "招待したユーザ"
         none: "まだ招待を送っていません"
-        truncated: "最初の {{count}} 個の招待履歴を表示しています。"
+        truncated: "最初の{{count}}個の招待履歴を表示しています。"
         redeemed: "受理された招待"
         redeemed_at: "受理日"
         pending: "保留中の招待"
@@ -773,7 +773,7 @@ ja:
       invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> accepted your invitation</p>"
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
       linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
-      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p> {{description}}バッジを付けられました</p>"
+      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p> {{description}}バッジを獲得しました</p>"
 
       popup:
         mentioned: '{{username}} が "{{topic}}" - {{site_title}} であなたをタグ付けしました'
@@ -823,15 +823,15 @@ ja:
         actions: "操作"
         change_category: "カテゴリ変更"
         close_topics: "トピックを閉じる"
-        archive_topics: "アーカイブトピック"
-        notification_level: "通知レベル変更"
+        archive_topics: "トピックをアーカイブ"
+        notification_level: "通知レベルを変更"
         choose_new_category: "このトピックへの新しいカテゴリを選択してください"
         selected:
           one: "あなたはトピックを<b>1つ</b>選択しました。"
           other: "あなたはトピックを<b>{{count}}つ</b>選択しました。"
       none:
         unread: "未読トピックはありません。"
-        new: "新着トピックはありません。"
+        new: "新規トピックはありません。"
         read: "まだトピックを一つも読んでいません。"
         posted: "まだトピックを一つも投稿していません。"
         latest: "最新のトピックはありません。"
@@ -841,7 +841,7 @@ ja:
         top: "トップトピックはありません。"
         search: "検索結果はありません。"
         educate:
-          new: '２日以内に投稿されたトピックは「最新」トピックとして表示されます。<a href="%{userPrefsUrl}">設定画面</a>で日数変更が可能です。'
+          new: '２日以内に投稿されたトピックが「新規」トピックとして表示されます。<a href="%{userPrefsUrl}">設定画面</a>で日数変更が可能です。'
           unread: '参加中のトピックに対して新しい投稿がある場合、未読記事として表示されます。'
       bottom:
         latest: "最新のトピックはこれ以上ありません。"
@@ -1344,7 +1344,7 @@ ja:
       email_in_allow_strangers: "登録されていないユーザからメールを受けとります。"
       email_in_disabled: "メールでの新規投稿は、サイトの設定で無効になっています。メールでの新規投稿を有効にするには"
       email_in_disabled_click: '"email in"設定を有効にしてください'
-      allow_badges_label: "このカテゴリでバッジが付与されることを許可"
+      allow_badges_label: "このカテゴリでのバッジ獲得を許可"
       edit_permissions: "パーミッションを編集"
       add_permission: "パーミッションを追加"
       this_year: "今年"
@@ -2215,8 +2215,8 @@ ja:
         badge_grouping: グループ
         badge_groupings:
           modal_title: バッジグルーピング
-        granted_by: バッジ付与者
-        granted_at: バッジ付与日
+        granted_by: バッジ獲得者
+        granted_at: バッジ獲得日
         reason_help: (ポストかトピックへのリンク)
         save: バッジを保存する
         delete: バッジを削除する
@@ -2233,7 +2233,7 @@ ja:
         no_badges: 付けられるバッジがありません
         none_selected: "バッジを選択して開始"
         allow_title: バッジは、タイトルとして使用されることを許可する
-        multiple_grant: 複数回付与することができます
+        multiple_grant: 複数回獲得することができます
         listable: パブリックパッジページに表示するバッジ
         enabled: バッジシステムを使う
         icon: アイコン
@@ -2242,7 +2242,7 @@ ja:
         query: バッジクエリ(SQL)
         target_posts: クエリ対象ポスト
         auto_revoke: 毎日失効クエリを実行
-        show_posts: バッジページの付与したバッジでポストを表示
+        show_posts: バッジページの獲得バッジでポストを表示
         trigger: トリガー
         trigger_type:
           none: "毎日更新する"
@@ -2251,7 +2251,7 @@ ja:
           trust_level_change: "ユーザのトラストレベルが変わったとき"
           user_change: "ユーザを作成、編集したとき"
         preview:
-          link_text: "付与するバッジをプレビュー"
+          link_text: "獲得バッジをプレビュー"
           plan_text: "クエリ計画をプレビュー"
           modal_title: "バッジクエリをプレビュー"
           sql_error_header: "クエリにエラーがあります"
