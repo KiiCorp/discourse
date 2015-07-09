@@ -59,19 +59,23 @@ ja:
       odd: は奇数にしてください
       record_invalid: 'バリデーションに失敗しました。 %{errors}'
       restrict_dependent_destroy:
-        one: "%{record}が存在しているので削除できません"
-        many: "%{record}が存在しているので削除できません。"
+        one: "%{record}が依存しているためレコードを削除できません"
+        many: "%{record}が依存しているのためレコードを削除できません。"
       too_long:
+        one: は1文字以内で入力してください
         other: は%{count}文字以内で入力してください
       too_short:
+        one: は1文字以上で入力してください
         other: は%{count}文字以上で入力してください
       wrong_length:
+        one: は1文字で入力してください
         other: は%{count}文字で入力してください
       other_than: "は%{count}以外の値にしてください"
     template:
       body: '次のフィールドに問題があります:'
       header:
-        other: '%{model} の保存中に%{count} 個のエラーが発生しました'
+        one: '%{model} の保存中にエラーが1件発生しました'
+        other: '%{model} の保存中にエラーが%{count}件発生しました'
     embed:
       load_from_remote: "投稿の読み込みに失敗しました。"
 
@@ -92,39 +96,46 @@ ja:
   not_found: "リクエストされたURL、リソースは見つかりませんでした"
   invalid_access: "リクエストしたリソースの閲覧が許可されていません"
   read_only_mode_enabled: "このサイトは読み取り専用モードです。会話は無効になっています。"
+
   too_many_replies:
-    other: "申し訳ありません、新しいユーザーの同じトピックへの返信は、一時的に %{count} 回に制限されています。"
+    one: "申し訳ありませんが、新規ユーザーの同じトピックへの回答は、一時的に1回に制限されています。"
+    other: "申し訳ありませんが、新規ユーザーの同じトピックへの回答は、一時的に%{count}回に制限されています。"
+
   embed:
     start_discussion: "議論の開始"
     continue: "議論を続ける"
     more_replies:
-      other: "%{count} 以上の返信"
+      one: "あと1件の回答"
+      other: "あと%{count}件の回答"
+
     loading: "会話をロードしています…"
     permalink: "パーマリンク"
     imported_from: "これは、オリジナルエントリ%{link}に対するディスカッショントピックです"
     in_reply_to: "▶ %{username}"
     replies:
-      other: "%{count} 通の返信"
+      one: "1件の回答"
+      other: "%{count}件の回答"
+
   too_many_mentions:
-    zero: "申し訳ありませんが、この投稿において他のユーザをタグ付けできません。"
-    one: "申し訳ありませんが、この投稿においてあと1人しかタグ付けできません。"
-    other: "申し訳ありませんが、このポストにおいてあと%{count}人しかタグ付けできません。"
+    zero: "申し訳ありませんが、投稿内で他のユーザをメンションすることはできません。"
+    one: "申し訳ありませんが、投稿内でメンションできるのは1人のみです。"
+    other: "申し訳ありませんが、投稿内でメンションできるのは%{count}人までです。"
   too_many_mentions_newuser:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにおいて他のユーザをタグ付けできません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにおいてあと1人しかタグ付けできません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにおいてあと%{count}人しかタグ付けできません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿内で他のユーザをメンションすることができません。"
+    one: "申し訳ありませんが、新規ユーザが投稿内でメンションできるのは1人のみです。"
+    other: "申し訳ありませんが、新規ユーザが投稿内でメンションできるのは%{count}人までです。"
   too_many_images:
     zero: "申し訳ありませんが、新規ユーザはこのポストに画像をアップロードできません。"
     one: "申し訳ありませんが、新規ユーザはこのポストに画像を1つしかアップロードできません。"
     other: "申し訳ありませんが、新規ユーザはこのポストに画像を%{count}個しかアップロードできません。"
   too_many_attachments:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにファイルを添付できません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにファイルを1つしか添付できません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにファイルを%{count}個しか添付できません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿にファイルを添付できません。"
+    one: "申し訳ありませんが、新規ユーザは投稿にファイルを1つしか添付できません。"
+    other: "申し訳ありませんが、新規ユーザは投稿にファイルを%{count}個しか添付できません。"
   too_many_links:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにリンクを貼れません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにリンクを1つしか貼れません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにリンクを%{count}個しか貼れません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿にリンクを貼れません。"
+    one: "申し訳ありませんが、新規ユーザは投稿にリンクを1つしか貼れません。"
+    other: "申し訳ありませんが、新規ユーザは投稿にリンクを%{count}個しか貼れません。"
   spamming_host: "申し訳ありませんが、このホストへのリンクを貼ることはできません。"
   user_is_suspended: "サスペンド中のユーザーは投稿ができません。"
   topic_not_found: "何かがおかしいです。トピックが終了したか、閲覧してる間に削除された可能性があります"
@@ -170,8 +181,8 @@ ja:
 
   education:
     until_posts:
-      one: "1 投稿"
-      other: "%{count} 投稿"
+      one: "1投稿"
+      other: "%{count}投稿"
 
     'new-topic': |
       %{site_name} へようこそ &mdash; **新たなトピックの作成ありがとうございます！**
@@ -307,7 +318,8 @@ ja:
       uncategorized: "未分類カテゴリは削除出来ません"
       has_subcategories: "サブカテゴリを持っているため、カテゴリを削除できません"
       topic_exists:
-        other: "%{count}個のトピックを持っているため、カテゴリを削除できません。一番古いトピックは%{topic_link}です"
+        one: "1件トピックが存在するためカテゴリを削除できません。一番古いトピックは%{topic_link}です。"
+        other: "%{count}件トピックが存在するためカテゴリを削除できません。一番古いトピックは%{topic_link}です。"
       topic_exists_no_oldest: "%{count}個のトピックを持っているため、カテゴリを削除できません"
   trust_levels:
     newuser:
@@ -325,60 +337,86 @@ ja:
     slow_down: "多すぎるアクションが実行されました。時間を置いてから試してください"
     too_many_requests: "このアクションを一日の間に実施可能な回数が決まっています。%{time_left}待ってから再度試してください。"
     hours:
-      other: "%{count} 時間"
+      one: "1時間"
+      other: "%{count}時間"
     minutes:
-      other: "%{count} 分"
+      one: "1分"
+      other: "%{count}分"
     seconds:
-      other: "%{count} 秒"
+      one: "1秒"
+      other: "%{count}秒"
   datetime:
     distance_in_words:
-      half_a_minute: "< 1m"
+      half_a_minute: "< 1分"
       less_than_x_seconds:
-        other: "< %{count} 秒"
+        one: "< 1秒"
+        other: "< %{count}秒"
       x_seconds:
-        other: "%{count} 秒"
+        one: "1秒"
+        other: "%{count}秒"
       less_than_x_minutes:
-        other: "< %{count} 分"
+        one: "< 1分"
+        other: "< %{count}分"
       x_minutes:
-        other: "%{count} 分"
+        one: "1分"
+        other: "%{count}分"
       about_x_hours:
-        other: "%{count} 時間"
+        one: "1時間"
+        other: "%{count}時間"
       x_days:
-        other: "%{count} 日"
+        one: "1日"
+        other: "%{count}日"
       about_x_months:
-        other: "%{count} ヶ月"
+        one: "1ヶ月"
+        other: "%{count}ヶ月"
       x_months:
-        other: "%{count} ヶ月"
+        one: "1ヶ月"
+        other: "%{count}ヶ月"
       about_x_years:
-        other: "%{count} 年"
+        one: "1年"
+        other: "%{count}年"
       over_x_years:
-        other: "> %{count} 年"
+        one: "> 1年"
+        other: "> %{count}年"
       almost_x_years:
-        other: "%{count} 年"
+        one: "1年"
+        other: "%{count}年"
     distance_in_words_verbose:
       half_a_minute: "たった今"
       less_than_x_seconds:
-        other: "現在"
+        one: "たった今"
+        other: "たった今"
       x_seconds:
-        other: "%{count} 秒前"
+        one: "1秒前"
+        other: "%{count}秒前"
       less_than_x_minutes:
-        other: "%{count} 分未満"
+        one: "1分未満"
+        other: "%{count}分未満"
       x_minutes:
-        other: "%{count} 分前"
+        one: "1分前"
+        other: "%{count}分前"
       about_x_hours:
-        other: "%{count} 時間前"
+        one: "1時間前"
+        other: "%{count}時間前"
       x_days:
-        other: "%{count} 日前"
+        one: "1日前"
+        other: "%{count}日前"
       about_x_months:
-        other: "約 %{count} ヶ月前"
+        one: "約1ヶ月前"
+        other: "約%{count}ヶ月前"
       x_months:
-        other: "%{count} ヶ月前"
+        one: "1ヶ月前"
+        other: "%{count}ヶ月前"
       about_x_years:
-        other: "約 %{count} 年前"
+        one: "約1年前"
+        other: "約%{count}年前"
       over_x_years:
-        other: "%{count} 年以上前"
+        one: "1年以上前"
+        other: "%{count}年以上前"
       almost_x_years:
-        other: "だいたい %{count} 年前"
+        one: "ほぼ1年前"
+        other: "ほぼ%{count}年前"
+
   password_reset:
     no_token: "申し訳ありませんが、このパスワード変更用リンクは古すぎです。再度ログインして「パスワードを設定する」を選択してください。"
     choose: "パスワードを入力ください"
@@ -914,11 +952,19 @@ ja:
     tos_url: "他サイトに利用規約をホストしている場合は、フル URL をここに指定。"
     privacy_policy_url: "他サイトにプライバシーポリシーをホストしている場合は、フル URL を個々に指定。"
     newuser_spam_host_threshold: "新規ユーザが、スパム認定されることなく `newuser_spam_host_posts` ポスト内にに同一ホストへのリンクを貼ることができる数。"
+
     white_listed_spam_host_domains: "スパムホスト検査から除外するドメインのリスト。新規ユーザはこれらのドメインでポスト内にリンクを作成することを制限されません"
     staff_like_weight: "スタッフにより「いいね!」された場合、どのくらい重み付けをするか"
     topic_view_duration_hours: "N時間毎にトピックを参照したIP/ユーザをカウント"
+
     levenshtein_distance_spammer_emails: "スパマーのメールアドレスとマッチさせるとき、数文字違いの曖昧な一致でも許可する"
     max_new_accounts_per_registration_ip: "もし既にトラストレベル0のユーザーがそのIPから(N)個作成されていたら、そのIPから登録できないようにする(スタッフメンバー、トラストレベル2以上は除く)"
+
+    min_ban_entries_for_roll_up: "ロールアップボタンがクリックされた際、少なくとも (N) エントリー存在する場合は新たなサブネット禁止エントリを作成する。"
+
+    max_age_unmatched_emails: "(N) 日後にスクリーンされた不一致メールエントリを削除する。"
+    max_age_unmatched_ips: "(N) 日後にスクリーンされた不一致 IP エントリを削除する。"
+
     num_flaggers_to_close_topic: "介入するため、自動的にトピックを停止するために必要なフラグを付けたユニークユーザの数"
     num_flags_to_close_topic: "トピックの介入のため、自動的にトピックを停止するために必要なフラグの数"
     auto_respond_to_flag_actions: "フラグを解除時の自動返信を有効にする"
@@ -960,12 +1006,23 @@ ja:
     max_daily_gravatar_crawls: "Discourseがプロフィール画像の確認をgravastarに行う回数の上限"
     public_user_custom_fields: "パブリックに公開されるカスタムフィールドのホワイトリスト"
     staff_user_custom_fields: "スタッフが参照できるカスタムフィールドのホワイトリスト"
+    enable_user_directory: "閲覧用のユーザディレクトリを提供"
+    allow_anonymous_posting: "ユーザが匿名モードになるのを許可"
+    anonymous_posting_min_trust_level: "匿名投稿を許可するのに必要な最低トラストレベル"
+    anonymous_account_duration_minutes: "匿名性を担保するために、全てのユーザに対して新たな匿名アカウントを N 分毎に作成する。例：600 をセットした場合、最終投稿より 600 分が経過するかユーザが匿名モードになったタイミングで新たな匿名アカウントを作成。"
+
     allow_profile_backgrounds: "プロフィール背景のアップロードを許可"
+
     sequential_replies_threshold: "ユーザに連続回答が多すぎることをリマインドする、連続ポスト投稿のしきい値"
     enable_mobile_theme: "モバイル端末にモバイル向けテーマ (通常サイト用テーマにスイッチ可能) を利用する。レスポンシブなスタイルシートを使用する場合はこの設定を無効にしてください。"
     dominating_topic_minimum_percent: "ユーザがトピックを占拠しているとリマインドを行う、ポスト投稿支配率 "
     suppress_uncategorized_badge: "トピック一覧でカテゴライズされていないトピックのバッジは表示しない"
+
     global_notice: "緊急の内容を表示します。全ての訪問者の緊急バナーで注意を行います。隠すには空白に変更してください(HTMLが許可されています)"
+
+    disable_edit_notifications: "'download_remote_images_to_local' が有効な場合、システムユーザによる通知の編集を無効化。"
+
+    full_name_required: "ユーザプロフィールのフルネームを必須フィールドにする。"
     enable_names: "ユーザーのプロフィール、ユーザーカード、メールアドレスでのフルネームを表示します。無効にすると、フルネームは非表示になります"
     display_name_on_posts: "@usernameに加えて、ポストにユーザのフルネームを表示する"
     invites_per_page: "ユーザページに表示されるデフォルトの招待数"
@@ -981,16 +1038,27 @@ ja:
     embed_username_key_from_feed: "フィードからDsicourseユーザ名をプルするキー"
     embed_truncate: "embedされた投稿をtruncateする"
     embed_category: "embedトピックのカテゴリ"
+    embed_post_limit: "embed する投稿の最大数"
     embed_whitelist_selector: "embedを許可するエレメントのCSS Selector"
     embed_blacklist_selector: "embedから削除するエレメントのCSS Selector"
     notify_about_flags_after: "この数時間後に処理されていないフラグがある場合は、contact_emailにメールを送信する。0を設定すると無効になります"
     enable_cdn_js_debugging: "全てのJSにcrossorigin権限を追加することで、/logsに適切なエラーを表示することを許可する"
     show_create_topics_notice: "サイトにpublicなトピックが5よりも少ない場合、トピックを作成するための通知が管理者に表示される"
+    delete_drafts_older_than_n_days: (N) 日より古いドラフトを削除する。
+
     vacuum_db_days: "DB領域を再利用するため、migration後にVACUUM FULL ANALYZEを実行する(0を設定すると無効化)"
+
     prevent_anons_from_downloading_files: "匿名ユーザーが添付ファイルをダウンロードするのを防止。警告: 画像ではなく、添付ファイルとして投稿された全てのファイルが対象です"
+
+    slug_generation_method: "スラッグの生成方法を選択する。'encoded' を選択するパーセントエンコーディングを利用。'none' を選択するとスラッグが無効化。"
+
     enable_emoji: "絵文字を有効にする"
     emoji_set: "How would you like your emoji?"
     enforce_square_emoji: "絵文字のアスペクト比を強制的に揃える"
+
+    approve_post_count: "新規ユーザからの投稿において、承認が必要な投稿の数"
+    approve_unless_trust_level: "このトラストレベルより下のユーザによる投稿は承認が必要"
+
     errors:
       invalid_email: "不正なメールアドレスです"
       invalid_username: "そのユーザ名のユーザは存在しません"
@@ -1013,6 +1081,9 @@ ja:
     edited: "%{link} で %{display_username} があなたのポストを編集しました"
     posted: "%{link} に %{display_username} がポストを投稿しました"
     moved_post: "%{display_username} があなたのポストを %{link} に移動しました"
+    private_message: "%{display_username} があなたにメッセージを送信しました: %{link}"
+    invited_to_private_message: "%{display_username} があなたをメッセージに招待しました: %{link}"
+    invited_to_topic: "%{display_username} があなたをトピックに招待しました: %{link}"
     invitee_accepted: "%{display_username} があなたの招待を受けました"
     linked: "%{display_username} は%{link}であなたをリンクしました"
     granted_badge: "あなたは%{link}を獲得しました"
@@ -1036,9 +1107,11 @@ ja:
     not_seen_in_a_month: "お帰りなさい！　最近見かけませんでしたね。　これらがあなたが離れてから最も人気のトピックです"
   move_posts:
     new_topic_moderator_post:
-      other: "%{count} 件のポストを新しいトピックに移動しました: %{topic_link}"
+      one: "1件のポストを新しいトピックに移動しました: %{topic_link}"
+      other: "%{count}件のポストを新しいトピックに移動しました: %{topic_link}"
     existing_topic_moderator_post:
-      other: "%{count} 件のポストを既存のトピックに移動しました: %{topic_link}"
+      one: "1件のポストを既存のトピックに移動しました: %{topic_link}"
+      other: "%{count}件のポストを既存のトピックに移動しました: %{topic_link}"
   change_owner:
     post_revision_text: "%{old_user} から %{new_user}にownershipを移動させました"
   emoji:
@@ -1051,17 +1124,23 @@ ja:
     closed_enabled: "このトピックは終了しました。新たに回答を投稿することはできません。"
     closed_disabled: "このトピックはオープンされました。新たに回答を投稿することができます。"
     autoclosed_enabled_days:
-      other: "このトピックは%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1日経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}日経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_hours:
-      other: "このトピックは%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1時間経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}時間経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_minutes:
-      other: "このトピックは%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1分経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}分経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_days:
-      other: "このトピックは最後の返信から%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_hours:
-      other: "このトピックは最後の返信から%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_minutes:
-      other: "このトピックは最後の返信から%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_disabled: "このトピックは再オープンされました。新しい回答が投稿できるようになりました。。"
     autoclosed_disabled_lastpost: "このトピックは再オープンされました。新しい回答が投稿できます"
     pinned_enabled: "このトピックはピン留めされました。スタッフによって全てのユーザのピン留めが解除されるか、ユーザ自身がピン留め解除するまで、カテゴリのトップに表示されます"
@@ -1080,6 +1159,7 @@ ja:
     not_allowed_from_ip_address: "そのIPアドレスからは%{username} としてログインできません"
     admin_not_allowed_from_ip_address: "そのIPアドレスからは管理者としてログインできません"
     suspended: "%{date} までログインできません。"
+    suspended_with_reason: "%{date} までアカウントは停止されました: %{reason}"
     errors: "%{errors}"
     not_available: "利用できません。%{suggestion} を試してみては?"
     something_already_taken: "エラーが発生しました。ユーザ名またはメールアドレスが既に使用中の可能性があります。パスワードリセットを行ってください。"
@@ -1101,6 +1181,10 @@ ja:
     email:
       not_allowed: "はこのメールプロバイダーを許可していません。他のメールアドレスを使用してください。"
       blocked: "は許可されていません。"
+    ip_address:
+      blocked: "このIPアドレスからの新規ユーザ登録は許可されていません。"
+      max_new_accounts_per_registration_ip: "このIPアドレスからの新規ユーザ登録は許可されていません（上限に達しました）。スタッフメンバーに確認してください。"
+
   invite_mailer:
     subject_template: "%{invitee_name} があなたを %{site_domain_name}の'%{topic_title}'に招待しました"
     text_body_template: |
@@ -1131,20 +1215,101 @@ ja:
       これは信頼されたユーザからの招待のため、あなたはログインする必要がありません
   invite_password_instructions:
     subject_template: "%{site_name} アカウントのパスワードを設定"
+    text_body_template: |
+      %{site_name} への招待を受けていただき、ありがとうございます！
+
+      こちらのリンクをクリックしてパスワードを入力してください：
+      %{base_url}/users/password-reset/%{email_token}
+
+      パスワードをお忘れ、またはまだ設定していない場合は、ログイン画面でメールアドレスを入力後「パスワードを忘れました」をクリックしてください。
+
   test_mailer:
     subject_template: "[%{site_name}] メール送信テスト"
+    text_body_template: |
+      これは以下のサイトより送信されたテストメールです。
+
+      [**%{base_url}**][0]
+
+      メール到達テストはこれで完了です。チェックすべきいくつかの重要な項目は次の通りです：
+
+      - Be *sure* to set the `notification email` from: address correctly in your site settings. **The domain specified in the "from" address of the emails you send is the domain your email will be validated against**.
+
+      - Know how to view the raw source of the email in your mail client, so you can examine email headers for important clues. in Gmail, it is the "show original" option in the drop-down menu at the top right of each mail.
+
+      - **IMPORTANT:** Does your ISP have a reverse DNS record entered to associate the domain names and IP addresses you send mail from? [Test your Reverse PTR record][2] here. If your ISP does not enter the proper reverse DNS pointer record, it's very unlikely any of your email will be delivered.
+
+      - Is your domain's [SPF record][8] correct? [Test your SPF record][1] here. Note that TXT is the correct official record type for SPF.
+
+      - Is your domain's [DKIM record][3] correct? This will significantly improve email deliverability. [Test your DKIM record][7] here.
+
+      - If you run your own mail server, check to make sure the IPs of your mail server are [not on any email blacklists][4]. Also verify that it is definitely sending a fully-qualified hostname that resolves in DNS in its HELO message. If not, this will cause your email to be rejected by many mail services.
+
+      (The *easy* way is to create a free account on [Mandrill][md] or [Mailgun][mg] or [Mailjet][mj], which have free generous free mailing plans and will be fine for small communities. You'll still need to set up the SPF and DKIM records in your DNS, though!)
+
+      We hope you received this email deliverability test OK!
+
+      Good luck,
+
+      Your friends at [Discourse](http://www.discourse.org)
+
+      [0]: %{base_url}
+      [1]: http://www.kitterman.com/spf/validate.html
+      [2]: http://mxtoolbox.com/ReverseLookup.aspx
+      [3]: http://www.dkim.org/
+      [4]: http://whatismyipaddress.com/blacklist-check
+      [7]: http://dkimcore.org/tools/dkimrecordcheck.html
+      [8]: http://www.openspf.org/SPF_Record_Syntax
+      [md]: http://mandrill.com
+      [mg]: http://www.mailgun.com/
+      [mj]: https://www.mailjet.com/pricing
+
   new_version_mailer:
     subject_template: "[%{site_name}] New Discourse version, update available"
+    text_body_template: |
+      A new version of [Discourse](http://www.discourse.org) is available.
+
+      Your version: %{installed_version}
+      New version: **%{new_version}**
+
+      You may want to:
+
+      - See what's new in the [GitHub changelog](https://github.com/discourse/discourse/commits/master).
+
+      - Upgrade by visiting [%{base_url}/admin/upgrade](%{base_url}/admin/upgrade) and pressing the "Upgrade" button.
+
+      - Visit [meta.discourse.org](http://meta.discourse.org) for news, discussion, and support for Discourse.
+
   new_version_mailer_with_notes:
     subject_template: "[%{site_name}] update available"
+    text_body_template: |
+      A new version of [Discourse](http://www.discourse.org) is available.
+
+      Your version: %{installed_version}
+      New version: **%{new_version}**
+
+      You may want to:
+
+      - See what's new in the [GitHub changelog](https://github.com/discourse/discourse/commits/master).
+
+      - Upgrade by visiting [%{base_url}/admin/upgrade](%{base_url}/admin/upgrade), and pressing the "Upgrade" button.
+
+      - Visit [meta.discourse.org](http://meta.discourse.org) for news, discussion, and support for Discourse.
+
+      ### Release notes
+
+      %{notes}
+
   flags_reminder:
     flags_were_submitted:
+      one: "これらのフラグは1時間以上前に作成されました"
       other: "これらのフラグは%{count}時間以上前に作成されました"
     please_review: "これを確認してください"
     post_number: "投稿"
     how_to_disable: ' "notify about flags after"設定でこのリマインダーを停止、頻度を変更することができます'
     subject_template:
-      other: "%{count} 個のフラグが判断待ちです"
+      one: "1個のフラグが判定待ちです"
+      other: "%{count}個のフラグが判定待ちです"
+
   flag_reasons:
     off_topic: "あなたの投稿やトピックは「オフトピック」としてフラグされています"
     inappropriate: "あなたの投稿は「不適切」にフラグされています。コミュニティは攻撃的、 [コミュニティガイドライン](/guidelines)に違反だと判断しました"
@@ -1156,14 +1321,132 @@ ja:
     disagreed: "伝えてくれてありがとうございます。調査しています"
     deferred: "伝えてくれてありがとうございます。調査しています"
     deferred_and_deleted: "伝えてくれてありがとうございます。投稿を削除しました"
-  temporarily_closed_due_to_flags: "多くのコミュニティフラッグのため、トピックは一時的に停止されました"
+  temporarily_closed_due_to_flags: "多くのコミュニティフラグのため、トピックは一時的に停止されました"
   system_messages:
     post_hidden:
-      subject_template: "コミュニティによるフラグによりポストが非表示になりました"
+      subject_template: "コミュニティによるフラグにより投稿が非表示になりました"
+      text_body_template: |
+        こんにちわ。
+
+        このメールは、あなたの投稿が非表示状態になったことをお伝えする %{site_name} からの自動送信メールです。
+
+        %{base_url}%{url}
+
+        %{flag_reason}
+
+        複数のコミュニティメンバーによりこの投稿に対してフラグが立てられたため非表示状態になりました。フィードバックを確認の上、投稿内容の編集を検討してください。**投稿内容は %{edit_delay} 分後に編集可能になります。また編集後自動的に非表示状態が解除されます。**
+
+        ただし、もしコミュニティにより投稿が再度非表示状態にされた場合、スタッフが確認するまで投稿は非表示状態になります。この場合、最悪の場合アカウントの凍結などの処理が行われる可能性があります。
+
+        より詳しいガイダンスは [コミュニティガイドライン](%{base_url}/guidelines) をご参照ください。
+
+    usage_tips:
+      text_body_template: |
+        このサイトを利用する際のヒントをいくつかご紹介します：
+
+        ## 自動スクロール
+
+        「次のページヘ」ボタンやページ番号はありません。**画面をスクロールするだけ** で自動的に表示内容が更新されます。
+
+        また新たな投稿があると、これも自動的に表示されます。
+
+        ## 何をすればよいの？
+
+        - **右上の <kbd>☰</kbd> アイコンボタン** をクリックすると、ユーザページへのリンク等を含むメニューが表示されます。
+
+        - トピックタイトルをクリックすると未読投稿が表示されます。ページ上部や下部に表示されている「最新の回答」や「投稿カウント」もうまく活用してみてください。
+
+        - トピック閲覧中、トピックタイトルをクリックすると最上部に移動します。画面下部のプログレスバーを使うと自由に移動できます。また <kbd>home</kbd> および <kbd>end</kbd> キーも利用可能です。
+
+            <img src="/images/welcome/progress-bar.png" width="143" height="39">
+
+        ## 回答するには？
+
+        - トピック全体に回答する場合は、ページ下部の「回答」ボタン <img src="/images/welcome/reply-topic.png" width="29" height="25"> をクリックしてください。
+
+        - ある特定の投稿に回答する場合は、対象となる投稿の下にある「回答」ボタン <img src="/images/welcome/reply-post.png" width="29" height="25"> をクリックしてください。
+
+        - 議論を別方向に持って行きつつ、現在のトピックとリンクを保持したい場合は、投稿の右側にある「リンクトピックとして回答」 <img src="/images/welcome/reply-as-linked-topic.png" width="15" height="25"> をクリックしてください。
+
+        回答の中で他のユーザを引用する場合は、引用したいテキストを選択した後に「回答」ボタンを押します。
+
+        <img src="/images/welcome/quote-reply.png" width="350" height="129">
+
+        回答の中で他のユーザに ping を飛ばすこともできます。`@` をタイプするとオートコンプリーターがポップアップします。
+
+        <img src="/images/welcome/username-completion.png" width="230" height="131">
+
+        [一般的な絵文字](http://www.emoji.codes/) は `:` を入力すると利用できます。例えば `:)` :smile:
+
+        ## 他に何ができるの？
+
+        各投稿の下部にアクションボタンがあります。
+
+        <img src="/images/welcome/like-link-flag-bookmark.png" width="169" height="46">
+
+        投稿を気に入った場合は **いいね！** ボタンをクリックしましょう。もし投稿内容に問題がある場合は **フラグ** ボタンをクリックして投稿者またはスタッフに通知してください。
+
+        投稿は **シェア** することもできます。また後ほどユーザページで確認できるように **ブックマーク** することもできます。
+
+        ## 誰かがあなたに質問をしている？
+
+        誰かがあなたの投稿に回答をしたり、あなたの投稿を引用したり、`@username` でメンションを行うと、ページの右上に数字が表示されます。ここをクリックすると **通知** が確認できます。
+
+        <img src="/images/welcome/notification-panel.png" width="178" height="59">
+
+        回答漏れなどの心配は不要です。通知が到着した際にオンラインではなかった場合は、メールで回答（やメッセージ）が通知されます。
+
+        ## 「新規」な投稿とは？
+
+        デフォルト設定の場合、2日以内の投稿が「新規」と見なされます。またあなたが参加（作成、回答、一定時間以上閲覧）した全ての議論も自動的に追跡されます。
+
+        これらのトピックの横には青文字で数字または new の文字が表示されます。
+
+        <img src="/images/welcome/topics-new-unread.png" width="368" height="89">
+
+        トピック下部のメニューを使うと、通知の状況をトピック毎に変更できます（カテゴリ毎に設定することも可能です）。トピックの追跡方法を変更する、または新たに通知設定を作成する方法は [ユーザ設定](%{base_url}/my/preferences) を参照してください。
+
+        ## やりたいことができないのですが？
+
+        セキュリティ上の理由により、新規ユーザにはいくつかの制限が課せられます。コミュニティに参加し続けることでトラストを得ると、これらの制限は自動的に解除されます。さらに高い [トラストレベル](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924) に達すると、コミュニティ運営のための機能も利用可能になります。
+
     welcome_user:
       subject_template: "%{site_name} へようこそ!"
+      text_body_template: |
+        %{site_name} への参加ありがとうございます！
+
+        %{new_user_tips}
+
+        [礼儀正しいコミュニティ](%{base_url}/guidelines) の維持に、何卒ご協力のほどよろしくお願いします。
+
+        それでは、お楽しみください！
+
+        (新規ユーザとして [スタッフメンバー](%{base_url}/about) に質問等がありましたら、このメールに返信してください)
+
     welcome_invite:
       subject_template: "%{site_name}へようこそ!"
+      text_body_template: |
+        %{site_name} への招待を受けて頂き、ありがとうございます！
+
+
+        アカウント **%{username}** をご用意しました。すぐにログイン可能です。名前等は [ユーザプロフィール][prefs] で変更できます。
+
+        後でログインする場合は…
+
+        1. 常に **招待を受けたメールアドレス** を使ってログインしてください。
+
+        2. [ユーザプロフィール][prefs] でユニークなパスワードを作成し、これを使ってログインしてください。
+
+        %{new_user_tips}
+
+        [礼儀正しいコミュニティ](%{base_url}/guidelines) の維持に、何卒ご協力のほどよろしくお願いします。
+
+        それでは、お楽しみください！
+
+        (新規ユーザとして [スタッフメンバー](%{base_url}/about) に質問等がありましたら、このメールに返信してください)
+
+        [prefs]: %{user_preferences_url}
+
     backup_succeeded:
       subject_template: "バックアップは正常に完了しました"
       text_body_template: "バックアップが完了しました.\n [admin > backup section](/admin/backups) から新しいバックアップがダウンロードできます"
@@ -1211,38 +1494,103 @@ ja:
         <a class="attachment" href="%{download_link}">%{file_name}</a> (%{file_size})
 
         このダウンロードリンクは48時間有効です
+
     csv_export_failed:
       subject_template: "データ出力失敗"
       text_body_template: "申し訳ありません。データ出力に失敗しました。ログを確認するかスタッフメンバーに連絡してください"
+
     email_reject_trust_level:
+      subject_template: "[%{site_name}] メールの問題 -- トラストレベルが低すぎます"
       text_body_template: |
-        申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
 
         あなたのアカウントは、このアドレスに新しいトピックを投稿するために必要なトラストレベルに達していませんでした。不明な点がある場合は、スタッフメンバーに連絡してください。
+
     email_reject_no_account:
+      subject_template: "[%{site_name}] メールの問題 -- 不明なアカウント"
       text_body_template: |
-        申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした。
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
 
         このメールアドレスを持つユーザーアカウントがありませんでした。違うメールアドレスから送信するか、スタッフメンバーに連絡してください。
-    email_reject_post_error:
-      text_body_template: |
-        申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした
 
-        複雑な書式、大きすぎるメッセージ、小さすぎるメッセージなど、複数の原因が考えられます。もう一度試してください。もし続くようであれば、ウェブサイトから投稿してください
-    email_reject_post_error_specified:
+    email_reject_empty:
+      subject_template: "[%{site_name}] メールの問題 -- コンテンツがありません"
       text_body_template: |
-        申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        メールのコンテンツが見つかりませんでした。メールの先頭でリプライをしてください。なお、インライン引用は正しく処理されません。
+
+        もしコンテンツが存在するにも関わらずこの通知が届いた場合は、メールに（プレインテキストだけではなく）HTMLコンテンツを入れてもう一度試してください。
+
+    email_reject_parsing:
+      subject_template: "[%{site_name}] メールの問題 -- 認識できないコンテンツ"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        メール内にリプライが見つかりませんでした。メールの先頭でリプライをしてください。なお、インライン引用は正しく処理されません。
+
+    email_reject_invalid_access:
+      subject_template: "[%{site_name}] メールの問題 -- 不正なアクセス"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        カテゴリに新たなトピックを投稿する権限がありません。不明な点がある場合はスタッフメンバーにご連絡ください。
+
+    email_reject_post_error:
+      subject_template: "[%{site_name}] メールの問題 -- 投稿エラー"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        複雑な書式、大きすぎるメッセージ、小さすぎるメッセージなど、複数の原因が考えられます。もう一度試してください。もし問題続くようであればウェブサイトから投稿してください
+
+    email_reject_post_error_specified:
+      subject_template: "[%{site_name}] メールの問題 -- 投稿エラー"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
 
         理由:
 
         %{post_error}
 
-        問題が修正できたら、もう一度試してください
+        問題を修正した後にもう一度試してください。
+
     email_reject_reply_key:
-      text_body_template: "申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした。 \n\n提供されたreply keyが無効または不明のため、このメールがどの返答なのかがわかりません。スタッフメンバーに連絡してください。\n"
+      subject_template: "[%{site_name}] メールの問題 -- 不明な Reply Key"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        提供された Reply Key が無効または不明のため、このメールがどの返答なのかがわかりません。スタッフメンバーに連絡してください。
+
     email_reject_destination:
-      text_body_template: "申し訳ありません,あなたの %{destination} へのメール(titled %{former_title}) は動きませんでした。 \n\n宛先が認識されませんでした。宛先(CC,BCCではなく)にサイトのアドレスがあること、スタッフから提供された正しいメールアドレスに送信していることを確認してください。\n\n"
+      subject_template: "[%{site_name}] メールの問題 -- 不明な To: アドレス"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        宛先が認識されませんでした。宛先（CC, BCCではなく）にサイトのアドレスがあること、スタッフから提供された正しいメールアドレスに送信していることを確認してください。
+
+    email_reject_topic_not_found:
+      subject_template: "[%{site_name}] メールの問題 -- トピックが見つかりませんでした"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        回答しているトピックが存在しません。既に消されている可能性があります。不明な点がある場合はスタッフメンバーにご連絡ください。
+
+    email_reject_topic_closed:
+      subject_template: "[%{site_name}] メールの問題 -- トピックが既に閉じています"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        回答しているトピックは現在閉じているため、これ以上回答を受け付けていません。不明な点がある場合はスタッフメンバーにご連絡ください。
+
+    email_reject_auto_generated:
+      subject_template: "[%{site_name}] メールの問題 -- 自動生成された回答"
+      text_body_template: |
+        申し訳ありません。あなたの %{destination} へのメール (titled %{former_title}) は送信されませんでした。
+
+        あなたのメールは「自動生成」されているとマークされているため受け付けることが出来ません。不明な点がある場合はスタッフメンバーにご連絡ください。
+
     email_error_notification:
+      subject_template: "[%{site_name}] メールの問題 -- POP認証エラー"
       text_body_template: |
         メールをポーリングするPOPサーバで認証エラーが発生しました。
 
@@ -1265,8 +1613,9 @@ ja:
         スタッフメンバーによってブロックされたことをお知らせするために、%{site_name} から自動的に送信されています。
 
         詳細については[コミュニティガイドライン](%{base_url}/guidelines)を参照してください。
+
     user_automatically_blocked:
-      subject_template: "コミュニティフラッグによって新たにブロックされたユーザ%{username}"
+      subject_template: "コミュニティフラグによって新たにブロックされたユーザ%{username}"
       text_body_template: |+
         これは自動送信メッセージです。
 
@@ -1296,17 +1645,22 @@ ja:
         トピックの作成やポストの投稿ができるようになりました。
     pending_users_reminder:
       subject_template:
-        other: "%{count} 人のユーザか承認を待っています。"
+        one: "1人のユーザか承認を待っています。"
+        other: "%{count}人のユーザか承認を待っています。"
       text_body_template: |
         新たなユーザが、フォーラム参加のための承認（もしくは拒否）待ち状態になっています。
 
-        [管理者セクションで確認する](/admin/users/list/pending).
+        [管理者セクションで確認する](/admin/users/list/pending)。
+
     download_remote_images_disabled:
       subject_template: "リモート画像のダウンロードを無効化"
       text_body_template: "'download_remote_images_threshold'の制限に達したため、`download_remote_images_to_local`の設定は無効になりました"
+
   unsubscribe_link: "メール解除は [ユーザ設定画面](%{user_preferences_url}) で行ってください。"
+
   subject_re: "Re:"
   subject_pm: "[プライベートメッセージ]"
+
   user_notifications:
     previous_discussion: "以前の回答"
     unsubscribe:
@@ -1314,7 +1668,41 @@ ja:
       description: "メールに興味がありませんか? 下のリンクをクリックすると、即座にメール解除ができます:"
     reply_by_email: "回答するにはこのメールに返信するか、ブラウザで %{base_url}%{url} にアクセスしてください。"
     visit_link_to_respond: "回答するにはブラウザで %{base_url}%{url} にアクセスしてください。"
+
     posted_by: "%{post_date} に %{username} が投稿"
+
+    user_invited_to_private_message_pm:
+      subject_template: "[%{site_name}] %{username} があなたをメッセージ '%{topic_title}' に招待しています"
+      text_body_template: |
+
+        %{username} があなたをメッセージに招待しています。
+
+        > %{site_title} -- %{site_description}
+
+        の
+
+        > **%{topic_title}**
+        >
+        > %{topic_excerpt}
+
+        メッセージを確認するにはこちらのリンクをクリックしてください: %{base_url}%{url}
+
+    user_invited_to_topic:
+      subject_template: "[%{site_name}] %{username} があなたをトピック '%{topic_title}' に招待しています"
+      text_body_template: |
+
+        %{username} があなたをディスカッションに招待しています。
+
+        > %{site_title} -- %{site_description}
+
+        の
+
+        > **%{topic_title}**
+        >
+        > %{topic_excerpt}
+
+        メッセージを確認するにはこちらのリンクをクリックしてください: %{base_url}%{url}
+
     user_replied:
       subject_template: "[%{site_name}] '%{topic_title}' 内のあなたのポストに新たな回答が投稿されました"
       text_body_template: |
@@ -1360,8 +1748,10 @@ ja:
 
         ---
         %{respond_instructions}
+
     digest:
       why: "あなたが最後にアクセスした %{last_seen_at} 以降の %{site_link} のまとめです"
+      subject_template: "[%{site_name}] ダイジェスト"
       new_activity: "あなたのトピックおよびポストにおけるアクティビティ:"
       top_topics: "人気の投稿"
       other_new_topics: "人気のトピック"
@@ -1380,8 +1770,29 @@ ja:
 
         新たなパスワードを設定する場合は次のリンクをクリックしてください:
         %{base_url}/users/password-reset/%{email_token}
+
     set_password:
       subject_template: "[%{site_name}] パスワード設定"
+      text_body_template: |
+        [%{site_name}](%{base_url}) のあなたのアカウントのパスワード設定申請を受け付けました。
+
+        この申請に覚えがない場合は、本メールを無視してください。
+
+        パスワードを変更するには、以下のリンクをクリックしてください。
+        %{base_url}/users/password-reset/%{email_token}
+
+        なお、この認証済メールアドレスに関連付けされたオンラインサービス（Google や Facebook など）のアカウントを使ってログインすることもできます。
+
+    admin_login:
+      subject_template: "[%{site_name}] Login"
+      text_body_template: |
+        Somebody asked to login to your account on [%{site_name}](%{base_url}).
+
+        If you did not make this request, you can safely ignore this email.
+
+        Click the following link to login:
+        %{base_url}/users/admin-login/%{email_token}
+
     account_created:
       subject_template: "[%{site_name}] あなたの新しいアカウント"
       text_body_template: |
@@ -1395,8 +1806,27 @@ ja:
         次のリンクをクリックして %{site_name} 用のメールアドレスを確認してください:
 
         %{base_url}/users/authorize-email/%{email_token}
+
     signup_after_approval:
       subject_template: "%{site_name} への参加承認完了!"
+      text_body_template: |
+        %{site_name} へようこそ！
+
+        スタッフメンバーにより %{site_name} のあなたのアカウントが承認されました。
+
+        以下のリンクをクリックして、アカウントの確認とアクティベーションを行ってください。
+        %{base_url}/users/activate-account/%{email_token}
+
+        もし上記のリンクがクリック出来ない場合は、ウェブブラウザのアドレスバーにリンクをコピー＆ペーストしてください。
+
+        %{new_user_tips}
+
+        [礼儀正しいコミュニティ](%{base_url}/guidelines) の維持に、何卒ご協力のほどよろしくお願いします。
+
+        それでは、お楽しみください！
+
+        (新規ユーザとして [スタッフメンバー](%{base_url}/about) に質問等がありましたら、このメールに返信してください)
+
     signup:
       subject_template: "[%{site_name}] 新たなアカウントのアクティベーション"
       text_body_template: |
@@ -1406,6 +1836,7 @@ ja:
         %{base_url}/users/activate-account/%{email_token}
 
         もし上記リンクがクリックできない場合は、ブラウザのアドレスバーにリンクアドレスをコピー&ペーストしてください。
+
   page_not_found:
     title: "リクエストしたページは存在しないかモデレータによって削除されました。"
     popular_topics: "人気"
@@ -1436,35 +1867,252 @@ ja:
   flag_reason:
     sockpuppet: "新規ユーザがトピックを作成し、同じ IP アドレスより別の新規ユーザが回答を投稿しました。サイトの flag_sockpuppets 設定を確認してください。"
     spam_hosts: "この新規ユーザは同一ドメインへのリンクを含むポストを複数作成しようとしました。サイトの newuser_spam_host_threshold 設定を確認してください"
+
   email_log:
     no_user: "id %{user_id}のユーザーは見つかりませんでした"
+    anonymous_user: "匿名ユーザです"
+    suspended_not_pm: "ユーザは停止状態です。メッセージは送信されません"
     seen_recently: "最近訪れたユーザ"
     post_not_found: "id %{post_id}のポストは見つかりません"
     notification_already_read: "メールが既読になったという通知です"
-    topic_nil: "post.topic is nil"
+    topic_nil: "post.topic が nil です"
     post_deleted: "投稿は投稿者によって削除されました"
-    already_read: "ユーザーはポストを既に読んだ"
-    message_blank: "メッセージが空"
-    message_to_blank: "メッセージの宛先(to)が空"
+    already_read: "ユーザーはこの投稿を既に読みました"
+    message_blank: "メッセージが空です"
+    message_to_blank: "メッセージの宛先 (to) が空です"
+    text_part_body_blank: "text_part.body が空です"
+    body_blank: "本文がからです"
+
   color_schemes:
     base_theme_name: "ベース"
+
   about: "About"
   guidelines: "ガイドライン"
   privacy: "プライバシー"
+
   edit_this_page: "ページを編集"
+
   csv_export:
     boolean_yes: "はい"
     boolean_no: "いいえ"
-  static_topic_first_reply: |+
-    %{page_name}ページのコンテンツを編集するには、このトピックの最初の投稿を編集してください
+
+  static_topic_first_reply: |
+    %{page_name} ページのコンテンツを編集するには、このトピックの最初の投稿を編集してください
 
   guidelines_topic:
     title: "よくある質問/コミュニティガイドライン"
+    body: |
+      <a name="civilized"></a>
+
+      ## [This is a Civilized Place for Public Discussion](#civilized)
+
+      Please treat this discussion forum with the same respect you would a public park.  We, too, are a shared community resource &mdash; a place to share skills, knowledge and interests through ongoing conversation.
+
+      These are not hard and fast rules, merely aids to the human judgment of our community. Use these guidelines to keep this a clean, well-lighted place for civilized public discourse.
+
+      <a name="improve"></a>
+
+      ## [Improve the Discussion](#improve)
+
+      Help us make this a great place for discussion by always working to improve the discussion in some way, however small. If you are not sure your post adds to the conversation, think over what you want to say and try again later.
+
+      The topics discussed here matter to us, and we want you to act as if they matter to you, too. Be respectful of the topics and the people discussing them, even if you disagree with some of what is being said.
+
+      One way to improve the discussion is by discovering ones that are already happening. Please spend some time browsing the topics here before replying or starting your own, and you’ll have a better chance of meeting others who share your interests.
+
+      <a name="agreeable"></a>
+
+      ## [Be Agreeable, Even When You Disagree](#agreeable)
+
+      You may wish to respond to something by disagreeing with it. That’s fine. But, remember to _criticize ideas, not people_. Please avoid:
+
+      *   Name-calling.
+      *   Ad hominem attacks.
+      *   Responding to a post’s tone instead of its actual content.
+      *   Knee-jerk contradiction.
+
+      Instead, provide reasoned counter-arguments that improve the conversation.
+
+      <a name="participate"></a>
+
+      ## [Your Participation Counts](#participate)
+
+      The conversations we have here set the tone for everyone. Help us influence the future of this community by choosing to engage in discussions that make this forum an interesting place to be &mdash; and avoiding those that do not.
+
+      Discourse provides tools that enable the community to collectively identify the best (and worst) contributions: favorites, bookmarks, likes, flags, replies, edits, and so forth. Use these tools to improve your own experience, and everyone else’s, too.
+
+      Let’s try to leave our park better than we found it.
+
+      <a name="flag-problems"></a>
+
+      <a name="flag-problems"></a>
+
+      ## [If You See a Problem, Flag It](#flag-problems)
+
+      Moderators have special authority; they are responsible for this forum. But so are you. With your help, moderators can be community facilitators, not just janitors or police.
+
+      When you see bad behavior, don’t reply. It encourages the bad behavior by acknowledging it, consumes your energy, and wastes everyone’s time. _Just flag it_. If enough flags accrue, action will be taken, either automatically or by moderator intervention.
+
+      In order to maintain our community, moderators reserve the right to remove any content and any user account for any reason at any time. Moderators do not preview new posts in any way; the moderators and site operators take no responsibility for any content posted by the community.
+
+      <a name="be-civil"></a>
+
+      ## [Always Be Civil](#be-civil)
+
+      Nothing sabotages a healthy conversation like rudeness:
+
+      *   Be civil. Don’t post anything that a reasonable person would consider offensive, abusive, or hate speech.
+      *   Keep it clean. Don’t post anything obscene or sexually explicit.
+      *   Respect each other. Don’t harass or grief anyone, impersonate people, or expose their private information.
+      *   Respect our forum. Don’t post spam or otherwise vandalize the forum.
+
+      These are not concrete terms with precise definitions &mdash; avoid even the _appearance_ of any of these things. If you’re unsure, ask yourself how you would feel if your post was featured on the front page of the New York Times.
+
+      This is a public forum, and search engines index these discussions. Keep the language, links, and images safe for family and friends.
+
+      <a name="keep-tidy"></a>
+
+      ## [Keep It Tidy](#keep-tidy)
+
+      Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
+
+      *   Don’t start a topic in the wrong category.
+      *   Don’t cross-post the same thing in multiple topics.
+      *   Don’t post no-content replies.
+      *   Don’t divert a topic by changing it midstream.
+      *   Don’t sign your posts &mdash; every post has your profile information attached to it.
+
+      Rather than posting “+1” or “Agreed”, use the Like button. Rather than taking an existing topic in a radically different direction, use Reply as a Linked Topic.
+
+      <a name="stealing"></a>
+
+      ## [Post Only Your Own Stuff](#stealing)
+
+      You may not post anything digital that belongs to someone else without permission. You may not post descriptions of, links to, or methods for stealing someone’s intellectual property (software, video, audio, images), or for breaking any other law.
+
+      <a name="power"></a>
+
+      ## [Powered by You](#power)
+
+      This site is operated by your [friendly local staff](/about) and *you*, the community. If you have any further questions about how things should work here, open a new topic in the [meta category](/c/meta) and let's discuss! If there's a critical or urgent issue that can't be handled by a meta topic or flag, contact us via the [staff page](/about).
+
+      <a name="tos"></a>
+
+      ## [Terms of Service](#tos)
+
+      Yes, legalese is boring, but we must protect ourselves &ndash; and by extension, you and your data &ndash; against unfriendly folks. We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
+
   tos_topic:
     title: "利用規約"
+
   privacy_topic:
     title: "プライバシーポリシー"
+
+  static:
+    search_help: |
+      <h2>ヒント</h2>
+      <p>
+      <ul>
+        <li>タイトルは優先的に検索にヒットします。</li>
+        <li>ユニークで一般的ではない単語で検索するとよい結果になります。</li>
+        <li>可能な場合は特定のカテゴリやユーザ、トピックに絞って検索を行いましょう。</li>
+      </ul>
+      </p>
+      <h2>利用可能なオプション</h2>
+      <p>
+        <table>
+        <tr><td><code>order:views</code></td><td><code>order:latest</code></td><td colspan=3></td></tr>
+        <tr><td><code>status:open</code></td><td><code>status:closed</code></td><td><code>status:archived</code></td><td><code>status:noreplies</code></td><td><code>status:singleuser</code></td></tr>
+        <tr><td><code>category:foo</code></td><td><code>user:foo</code></td><td colspan=3></td></tr>
+        <tr><td><code>in:likes</code></td><td><code>in:posted</code></td><td><code>in:watching</code></td><td><code>in:tracking</code></td><td><code>in:private</code></td></tr>
+        <tr><td><code>in:bookmarks</code></td><td colspan=4></td></tr>
+        </table>
+      </p>
+      <p>
+        一例として <code>rainbows category:parks status:open order:latest</code> は、カテゴリ "parks" より "rainbows" という単語を含み、かつクローズやアーカイブされていないトピックを検索します。また検索結果は最終投稿の日時によりソートされます。
+      </p>
+
+  badges:
+    long_descriptions:
+      autobiographer: |
+        Blah blah blah
+        Blah blah blah
+      first_like: |
+        Blah blah blah
+        Blah blah blah
+      first_link: |
+        Blah blah blah
+        Blah blah blah
+      first_quote: |
+        Blah blah blah
+        Blah blah blah
+      first_share: |
+        Blah blah blah
+        Blah blah blah
+      read_guidelines: |
+        Blah blah blah
+        Blah blah blah
+      reader: |
+        Blah blah blah
+        Blah blah blah
+      editor: |
+        Blah blah blah
+        Blah blah blah
+      first_flag: |
+        Flagging is critical to the health of your community. If you notice any posts that require moderator attention please
+        do not hesitate to flag. You may also use the flagging dialog to send <b>messages</b> to users once you reach
+        trust level 1.
+      nice_share: |
+        Blah blah blah
+        Blah blah blah
+      welcome: |
+        Blah blah blah
+        Blah blah blah
+      anniversary: |
+        Blah blah blah
+        Blah blah blah
+      good_share: |
+        Blah blah blah
+        Blah blah blah
+      great_share: |
+        Blah blah blah
+        Blah blah blah
+      nice_post: |
+        Blah blah blah
+        Blah blah blah
+      nice_topic: |
+        Blah blah blah
+        Blah blah blah
+      good_post: |
+        Blah blah blah
+        Blah blah blah
+      good_topic: |
+        Blah blah blah
+        Blah blah blah
+      great_post: |
+        Blah blah blah
+        Blah blah blah
+      great_topic: |
+        Blah blah blah
+        Blah blah blah
+      basic: |
+        Blah blah blah
+        Blah blah blah
+      member: |
+        Blah blah blah
+        Blah blah blah
+      regular: |
+        Blah blah blah
+        Blah blah blah
+      leader: |
+        Blah blah blah
+        Blah blah blah
+
   admin_login:
+    success: "メール送信t"
     error: "エラー！"
     email_input: "アドミンメール"
     submit_button: "メールを送信する"
+
+  discourse_hub:
+    access_token_problem: "管理者に連絡してください：サイト設定を更新し、正しい discourse_org_access_key を指定してください。"
