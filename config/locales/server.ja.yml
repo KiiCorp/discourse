@@ -78,14 +78,6 @@ ja:
         other: '%{model} の保存中にエラーが%{count}件発生しました'
     embed:
       load_from_remote: "投稿の読み込みに失敗しました。"
-
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
-
   bulk_invite:
     file_should_be_csv: "アップロードするファイルは、csv または txt 形式である必要があります。"
   backup:
@@ -441,7 +433,8 @@ ja:
     approval_required: "このフォーラムにアクセスするにはモデレータによる承認が必要です。承認されるとメールにて通知されます!"
   post_action_types:
     missing_session: "アカウントの作成が確認できませんでした。Cookie が有効になっていることを確認してください。"
-  post_action_types:    off_topic:
+  post_action_types:
+    off_topic:
       title: '関係ない話題'
       description: 'このポストはタイトルと投稿で定義される現在の議論に関連しておらず、どこかに移動させる必要があります'
       long_form: '「関係ない話題」としてフラグを立つ'
