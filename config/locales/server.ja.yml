@@ -59,19 +59,23 @@ ja:
       odd: は奇数にしてください
       record_invalid: 'バリデーションに失敗しました。 %{errors}'
       restrict_dependent_destroy:
-        one: "%{record}が存在しているので削除できません"
-        many: "%{record}が存在しているので削除できません。"
+        one: "%{record}が依存しているためレコードを削除できません"
+        many: "%{record}が依存しているのためレコードを削除できません。"
       too_long:
+        one: は1文字以内で入力してください
         other: は%{count}文字以内で入力してください
       too_short:
+        one: は1文字以上で入力してください
         other: は%{count}文字以上で入力してください
       wrong_length:
+        one: は1文字で入力してください
         other: は%{count}文字で入力してください
       other_than: "は%{count}以外の値にしてください"
     template:
       body: '次のフィールドに問題があります:'
       header:
-        other: '%{model} の保存中に%{count} 個のエラーが発生しました'
+        one: '%{model} の保存中にエラーが1件発生しました'
+        other: '%{model} の保存中にエラーが%{count}件発生しました'
     embed:
       load_from_remote: "投稿の読み込みに失敗しました。"
 
@@ -92,39 +96,46 @@ ja:
   not_found: "リクエストされたURL、リソースは見つかりませんでした"
   invalid_access: "リクエストしたリソースの閲覧が許可されていません"
   read_only_mode_enabled: "このサイトは読み取り専用モードです。会話は無効になっています。"
+
   too_many_replies:
-    other: "申し訳ありません、新しいユーザーの同じトピックへの返信は、一時的に %{count} 回に制限されています。"
+    one: "申し訳ありませんが、新規ユーザーの同じトピックへの回答は、一時的に1回に制限されています。"
+    other: "申し訳ありませんが、新規ユーザーの同じトピックへの回答は、一時的に%{count}回に制限されています。"
+
   embed:
     start_discussion: "議論の開始"
     continue: "議論を続ける"
     more_replies:
-      other: "%{count} 以上の返信"
+      one: "あと1件の回答"
+      other: "あと%{count}件の回答"
+
     loading: "会話をロードしています…"
     permalink: "パーマリンク"
     imported_from: "これは、オリジナルエントリ%{link}に対するディスカッショントピックです"
     in_reply_to: "▶ %{username}"
     replies:
-      other: "%{count} 通の返信"
+      one: "1件の回答"
+      other: "%{count}件の回答"
+
   too_many_mentions:
-    zero: "申し訳ありませんが、この投稿において他のユーザをタグ付けできません。"
-    one: "申し訳ありませんが、この投稿においてあと1人しかタグ付けできません。"
-    other: "申し訳ありませんが、このポストにおいてあと%{count}人しかタグ付けできません。"
+    zero: "申し訳ありませんが、投稿内で他のユーザをメンションすることはできません。"
+    one: "申し訳ありませんが、投稿内でメンションできるのは1人のみです。"
+    other: "申し訳ありませんが、投稿内でメンションできるのは%{count}人までです。"
   too_many_mentions_newuser:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにおいて他のユーザをタグ付けできません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにおいてあと1人しかタグ付けできません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにおいてあと%{count}人しかタグ付けできません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿内で他のユーザをメンションすることができません。"
+    one: "申し訳ありませんが、新規ユーザが投稿内でメンションできるのは1人のみです。"
+    other: "申し訳ありませんが、新規ユーザが投稿内でメンションできるのは%{count}人までです。"
   too_many_images:
     zero: "申し訳ありませんが、新規ユーザはこのポストに画像をアップロードできません。"
     one: "申し訳ありませんが、新規ユーザはこのポストに画像を1つしかアップロードできません。"
     other: "申し訳ありませんが、新規ユーザはこのポストに画像を%{count}個しかアップロードできません。"
   too_many_attachments:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにファイルを添付できません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにファイルを1つしか添付できません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにファイルを%{count}個しか添付できません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿にファイルを添付できません。"
+    one: "申し訳ありませんが、新規ユーザは投稿にファイルを1つしか添付できません。"
+    other: "申し訳ありませんが、新規ユーザは投稿にファイルを%{count}個しか添付できません。"
   too_many_links:
-    zero: "申し訳ありませんが、新規ユーザはこのポストにリンクを貼れません。"
-    one: "申し訳ありませんが、新規ユーザはこのポストにリンクを1つしか貼れません。"
-    other: "申し訳ありませんが、新規ユーザはこのポストにリンクを%{count}個しか貼れません。"
+    zero: "申し訳ありませんが、新規ユーザは投稿にリンクを貼れません。"
+    one: "申し訳ありませんが、新規ユーザは投稿にリンクを1つしか貼れません。"
+    other: "申し訳ありませんが、新規ユーザは投稿にリンクを%{count}個しか貼れません。"
   spamming_host: "申し訳ありませんが、このホストへのリンクを貼ることはできません。"
   user_is_suspended: "サスペンド中のユーザーは投稿ができません。"
   topic_not_found: "何かがおかしいです。トピックが終了したか、閲覧してる間に削除された可能性があります"
@@ -170,8 +181,8 @@ ja:
 
   education:
     until_posts:
-      one: "1 投稿"
-      other: "%{count} 投稿"
+      one: "1投稿"
+      other: "%{count}投稿"
 
     'new-topic': |
       %{site_name} へようこそ &mdash; **新たなトピックの作成ありがとうございます！**
@@ -307,7 +318,8 @@ ja:
       uncategorized: "未分類カテゴリは削除出来ません"
       has_subcategories: "サブカテゴリを持っているため、カテゴリを削除できません"
       topic_exists:
-        other: "%{count}個のトピックを持っているため、カテゴリを削除できません。一番古いトピックは%{topic_link}です"
+        one: "1件トピックが存在するためカテゴリを削除できません。一番古いトピックは%{topic_link}です。"
+        other: "%{count}件トピックが存在するためカテゴリを削除できません。一番古いトピックは%{topic_link}です。"
       topic_exists_no_oldest: "%{count}個のトピックを持っているため、カテゴリを削除できません"
   trust_levels:
     newuser:
@@ -325,60 +337,86 @@ ja:
     slow_down: "多すぎるアクションが実行されました。時間を置いてから試してください"
     too_many_requests: "このアクションを一日の間に実施可能な回数が決まっています。%{time_left}待ってから再度試してください。"
     hours:
-      other: "%{count} 時間"
+      one: "1時間"
+      other: "%{count}時間"
     minutes:
-      other: "%{count} 分"
+      one: "1分"
+      other: "%{count}分"
     seconds:
-      other: "%{count} 秒"
+      one: "1秒"
+      other: "%{count}秒"
   datetime:
     distance_in_words:
-      half_a_minute: "< 1m"
+      half_a_minute: "< 1分"
       less_than_x_seconds:
-        other: "< %{count} 秒"
+        one: "< 1秒"
+        other: "< %{count}秒"
       x_seconds:
-        other: "%{count} 秒"
+        one: "1秒"
+        other: "%{count}秒"
       less_than_x_minutes:
-        other: "< %{count} 分"
+        one: "< 1分"
+        other: "< %{count}分"
       x_minutes:
-        other: "%{count} 分"
+        one: "1分"
+        other: "%{count}分"
       about_x_hours:
-        other: "%{count} 時間"
+        one: "1時間"
+        other: "%{count}時間"
       x_days:
-        other: "%{count} 日"
+        one: "1日"
+        other: "%{count}日"
       about_x_months:
-        other: "%{count} ヶ月"
+        one: "1ヶ月"
+        other: "%{count}ヶ月"
       x_months:
-        other: "%{count} ヶ月"
+        one: "1ヶ月"
+        other: "%{count}ヶ月"
       about_x_years:
-        other: "%{count} 年"
+        one: "1年"
+        other: "%{count}年"
       over_x_years:
-        other: "> %{count} 年"
+        one: "> 1年"
+        other: "> %{count}年"
       almost_x_years:
-        other: "%{count} 年"
+        one: "1年"
+        other: "%{count}年"
     distance_in_words_verbose:
       half_a_minute: "たった今"
       less_than_x_seconds:
-        other: "現在"
+        one: "たった今"
+        other: "たった今"
       x_seconds:
-        other: "%{count} 秒前"
+        one: "1秒前"
+        other: "%{count}秒前"
       less_than_x_minutes:
-        other: "%{count} 分未満"
+        one: "1分未満"
+        other: "%{count}分未満"
       x_minutes:
-        other: "%{count} 分前"
+        one: "1分前"
+        other: "%{count}分前"
       about_x_hours:
-        other: "%{count} 時間前"
+        one: "1時間前"
+        other: "%{count}時間前"
       x_days:
-        other: "%{count} 日前"
+        one: "1日前"
+        other: "%{count}日前"
       about_x_months:
-        other: "約 %{count} ヶ月前"
+        one: "約1ヶ月前"
+        other: "約%{count}ヶ月前"
       x_months:
-        other: "%{count} ヶ月前"
+        one: "1ヶ月前"
+        other: "%{count}ヶ月前"
       about_x_years:
-        other: "約 %{count} 年前"
+        one: "約1年前"
+        other: "約%{count}年前"
       over_x_years:
-        other: "%{count} 年以上前"
+        one: "1年以上前"
+        other: "%{count}年以上前"
       almost_x_years:
-        other: "だいたい %{count} 年前"
+        one: "ほぼ1年前"
+        other: "ほぼ%{count}年前"
+
   password_reset:
     no_token: "申し訳ありませんが、このパスワード変更用リンクは古すぎです。再度ログインして「パスワードを設定する」を選択してください。"
     choose: "パスワードを入力ください"
@@ -1069,9 +1107,11 @@ ja:
     not_seen_in_a_month: "お帰りなさい！　最近見かけませんでしたね。　これらがあなたが離れてから最も人気のトピックです"
   move_posts:
     new_topic_moderator_post:
-      other: "%{count} 件のポストを新しいトピックに移動しました: %{topic_link}"
+      one: "1件のポストを新しいトピックに移動しました: %{topic_link}"
+      other: "%{count}件のポストを新しいトピックに移動しました: %{topic_link}"
     existing_topic_moderator_post:
-      other: "%{count} 件のポストを既存のトピックに移動しました: %{topic_link}"
+      one: "1件のポストを既存のトピックに移動しました: %{topic_link}"
+      other: "%{count}件のポストを既存のトピックに移動しました: %{topic_link}"
   change_owner:
     post_revision_text: "%{old_user} から %{new_user}にownershipを移動させました"
   emoji:
@@ -1084,17 +1124,23 @@ ja:
     closed_enabled: "このトピックは終了しました。新たに回答を投稿することはできません。"
     closed_disabled: "このトピックはオープンされました。新たに回答を投稿することができます。"
     autoclosed_enabled_days:
-      other: "このトピックは%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1日経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}日経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_hours:
-      other: "このトピックは%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1時間経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}時間経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_minutes:
-      other: "このトピックは%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは1分経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは%{count}分経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_days:
-      other: "このトピックは最後の返信から%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}日が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_hours:
-      other: "このトピックは最後の返信から%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}時間が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_enabled_lastpost_minutes:
-      other: "このトピックは最後の返信から%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      one: "このトピックは最後の回答から1分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
+      other: "このトピックは最後の回答から%{count}分が経過したので自動的に終了しました。新たに回答を投稿することはできません"
     autoclosed_disabled: "このトピックは再オープンされました。新しい回答が投稿できるようになりました。。"
     autoclosed_disabled_lastpost: "このトピックは再オープンされました。新しい回答が投稿できます"
     pinned_enabled: "このトピックはピン留めされました。スタッフによって全てのユーザのピン留めが解除されるか、ユーザ自身がピン留め解除するまで、カテゴリのトップに表示されます"
@@ -1255,12 +1301,15 @@ ja:
 
   flags_reminder:
     flags_were_submitted:
+      one: "これらのフラグは1時間以上前に作成されました"
       other: "これらのフラグは%{count}時間以上前に作成されました"
     please_review: "これを確認してください"
     post_number: "投稿"
     how_to_disable: ' "notify about flags after"設定でこのリマインダーを停止、頻度を変更することができます'
     subject_template:
-      other: "%{count} 個のフラグが判断待ちです"
+      one: "1個のフラグが判定待ちです"
+      other: "%{count}個のフラグが判定待ちです"
+
   flag_reasons:
     off_topic: "あなたの投稿やトピックは「オフトピック」としてフラグされています"
     inappropriate: "あなたの投稿は「不適切」にフラグされています。コミュニティは攻撃的、 [コミュニティガイドライン](/guidelines)に違反だと判断しました"
@@ -1272,7 +1321,7 @@ ja:
     disagreed: "伝えてくれてありがとうございます。調査しています"
     deferred: "伝えてくれてありがとうございます。調査しています"
     deferred_and_deleted: "伝えてくれてありがとうございます。投稿を削除しました"
-  temporarily_closed_due_to_flags: "多くのコミュニティフラッグのため、トピックは一時的に停止されました"
+  temporarily_closed_due_to_flags: "多くのコミュニティフラグのため、トピックは一時的に停止されました"
   system_messages:
     post_hidden:
       subject_template: "コミュニティによるフラグにより投稿が非表示になりました"
@@ -1566,7 +1615,7 @@ ja:
         詳細については[コミュニティガイドライン](%{base_url}/guidelines)を参照してください。
 
     user_automatically_blocked:
-      subject_template: "コミュニティフラッグによって新たにブロックされたユーザ%{username}"
+      subject_template: "コミュニティフラグによって新たにブロックされたユーザ%{username}"
       text_body_template: |+
         これは自動送信メッセージです。
 
@@ -1596,7 +1645,8 @@ ja:
         トピックの作成やポストの投稿ができるようになりました。
     pending_users_reminder:
       subject_template:
-        other: "%{count} 人のユーザか承認を待っています。"
+        one: "1人のユーザか承認を待っています。"
+        other: "%{count}人のユーザか承認を待っています。"
       text_body_template: |
         新たなユーザが、フォーラム参加のための承認（もしくは拒否）待ち状態になっています。
 

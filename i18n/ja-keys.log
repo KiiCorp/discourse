@@ -1,17 +1,3 @@
-ja.js.category.notifications.title
-ja.js.category.notifications.reasons
-ja.js.topic_map.participants_title
-ja.js.topic_map.links_title
-ja.js.filters.search.help
-ja.admin_js.admin.flags.agree_flag_hide_post_title
-ja.admin_js.admin.groups.default_title
-ja.admin_js.admin.groups.primary_group
-ja.admin_js.admin.backups.upload.title
-ja.admin_js.admin.export_csv.success
-ja.admin_js.admin.impersonate.not_found
-ja.admin_js.admin.impersonate.invalid
-ja.admin_js.keyboard_shortcuts_help.jump_to.home
-ja.admin_js.keyboard_shortcuts_help.jump_to.bookmarks
 ja.stringex.characters.ellipsis
 ja.stringex.characters.number
 ja.i18n.transliterate.rule.?
