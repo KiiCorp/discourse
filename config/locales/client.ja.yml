@@ -2197,11 +2197,11 @@ ja:
           spam: 'スパム'
           rate_limits: '投稿制限'
           developer: '開発者向け'
-          embedding: "埋め込む"
+          embedding: "埋め込み情報"
           legal: "法律に基づく情報"
           uncategorized: 'その他'
           backups: "バックアップ"
-          login: "ログインする"
+          login: "ログイン"
           plugins: "プラグイン"
       badges:
         title: バッジ
