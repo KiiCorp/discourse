@@ -1058,7 +1058,7 @@ ja:
         username_placeholder: "ユーザ名"
         action: '招待状を送る'
         help: 'このトピックに他のユーザをメールまたは通知で招待する。'
-        to_forum: "ログインしなくてもこの投稿に返信ができることを、あなたの友人に知らせます。"
+        to_forum: "このフォーラムにワンクリックで参加できるようにあなたの友人にメールを送ります。"
         sso_enabled: "このトピックに招待したい人のユーザ名を入力してください。"
         to_topic_blank: "このトピックに招待したい人のユーザ名かメールアドレスを入力してください。"
         to_topic_email: "You've entered an email address. We'll email an invitation that allows your friend to immediately reply to this topic."
