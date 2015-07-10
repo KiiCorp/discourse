@@ -2422,7 +2422,7 @@ ja:
           name: 活動家
           description: ユーザを三人招待した。
         champion:
-          name: チャンピョン
+          name: 王者
           description: ユーザを十人招待した。
         first_share:
           name: 初めてのシェア
