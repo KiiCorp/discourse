@@ -20,15 +20,15 @@ ja:
             tb: TB
     dates:
       time: "h:mm a"
-      long_no_year: "MMM D日 h:mm a"
-      long_no_year_no_time: "MMM D日"
-      long_with_year: "YYYY年 MMM D日 h:mm a"
-      long_with_year_no_time: "YYYY年 MMM D日"
-      long_date_with_year: "MMM D日, 'YY LT"
-      long_date_without_year: "MMM D日, LT"
-      long_date_with_year_without_time: "MMM D日, 'YY"
-      long_date_without_year_with_linebreak: "MMM D日 <br/>LT"
-      long_date_with_year_with_linebreak: "MMM D日, 'YY <br/>LT"
+      long_no_year: "MMMDoah:mm"
+      long_no_year_no_time: "MMMDo"
+      long_with_year: "lll"
+      long_with_year_no_time: "ll"
+      long_date_with_year: "YY年MMMDoLT"
+      long_date_without_year: "MMMDoLT"
+      long_date_with_year_without_time: "YY年MMMDo"
+      long_date_without_year_with_linebreak: "MMMDo<br/>LT"
+      long_date_with_year_with_linebreak: "YY年MMMDo<br/>LT"
       tiny:
         half_a_minute: "< 1分"
         less_than_x_seconds:

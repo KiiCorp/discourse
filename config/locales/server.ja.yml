@@ -7,9 +7,9 @@
 
 ja:
   dates:
-    short_date_no_year: "MMM D日"
-    short_date: "YYYY年 MMM D日"
-    long_date: "YYYY年 MMMM D日 h:mma"
+    short_date_no_year: "MMMDo"
+    short_date: "ll"
+    long_date: "lll"
 
   datetime: &datetime
     month_names:
