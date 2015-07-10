@@ -658,22 +658,22 @@ ja:
       resend_activation_email: "再度アクティベーションメールを送信するにはここをクリックしてください。"
       sent_activation_email_again: "<b>{{currentEmail}}</b> にアクティベーションメールを再送しました。メール到着まで数分かかることがあります (いつまで立ってもメールが届かない場合は、念のためスパムフォルダの中も確認してみてください)。"
       google:
-        title: "Googleで"
+        title: "Googleでログイン"
         message: "Google による認証 (ポップアップがブロックされていないことを確認してください)"
       google_oauth2:
-        title: "Googleで"
+        title: "Googleでログイン"
         message: "Googleによる認証 (ポップアップがブロックされていないことを確認してください)"
       twitter:
-        title: "Twitterで"
+        title: "Twitterでログイン"
         message: "Twitter による認証 (ポップアップがブロックされていないことを確認してください)"
       facebook:
-        title: "Facebookで"
+        title: "Facebookでログイン"
         message: "Facebook による認証 (ポップアップがブロックされていないことを確認してください)"
       yahoo:
-        title: "with Yahoo"
+        title: "Yahooでログイン"
         message: "Yahoo による認証 (ポップアップがブロックされていないことを確認してください)"
       github:
-        title: "with GitHub"
+        title: "GitHubでログイン"
         message: "Github による認証 (ポップアップがブロックされていないことを確認してください)"
     apple_international: "Apple/International"
     google: "Google"
