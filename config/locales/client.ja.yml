@@ -20,15 +20,15 @@ ja:
             tb: TB
     dates:
       time: "h:mm a"
-      long_no_year: "MMM D日 h:mm a"
-      long_no_year_no_time: "MMM D日"
-      long_with_year: "YYYY年 MMM D日 h:mm a"
-      long_with_year_no_time: "YYYY年 MMM D日"
-      long_date_with_year: "MMM D日, 'YY LT"
-      long_date_without_year: "MMM D日, LT"
-      long_date_with_year_without_time: "MMM D日, 'YY"
-      long_date_without_year_with_linebreak: "MMM D日 <br/>LT"
-      long_date_with_year_with_linebreak: "MMM D日, 'YY <br/>LT"
+      long_no_year: "MMMDoah:mm"
+      long_no_year_no_time: "MMMDo"
+      long_with_year: "lll"
+      long_with_year_no_time: "ll"
+      long_date_with_year: "YY年MMMDoLT"
+      long_date_without_year: "MMMDoLT"
+      long_date_with_year_without_time: "YY年MMMDo"
+      long_date_without_year_with_linebreak: "MMMDo<br/>LT"
+      long_date_with_year_with_linebreak: "YY年MMMDo<br/>LT"
       tiny:
         half_a_minute: "< 1分"
         less_than_x_seconds:
@@ -658,22 +658,22 @@ ja:
       resend_activation_email: "再度アクティベーションメールを送信するにはここをクリックしてください。"
       sent_activation_email_again: "<b>{{currentEmail}}</b> にアクティベーションメールを再送しました。メール到着まで数分かかることがあります (いつまで立ってもメールが届かない場合は、念のためスパムフォルダの中も確認してみてください)。"
       google:
-        title: "Googleで"
+        title: "Googleでログイン"
         message: "Google による認証 (ポップアップがブロックされていないことを確認してください)"
       google_oauth2:
-        title: "Googleで"
+        title: "Googleでログイン"
         message: "Googleによる認証 (ポップアップがブロックされていないことを確認してください)"
       twitter:
-        title: "Twitterで"
+        title: "Twitterでログイン"
         message: "Twitter による認証 (ポップアップがブロックされていないことを確認してください)"
       facebook:
-        title: "Facebookで"
+        title: "Facebookでログイン"
         message: "Facebook による認証 (ポップアップがブロックされていないことを確認してください)"
       yahoo:
-        title: "with Yahoo"
+        title: "Yahooでログイン"
         message: "Yahoo による認証 (ポップアップがブロックされていないことを確認してください)"
       github:
-        title: "with GitHub"
+        title: "GitHubでログイン"
         message: "Github による認証 (ポップアップがブロックされていないことを確認してください)"
     apple_international: "Apple/International"
     google: "Google"
@@ -1058,7 +1058,7 @@ ja:
         username_placeholder: "ユーザ名"
         action: '招待状を送る'
         help: 'このトピックに他のユーザをメールまたは通知で招待する。'
-        to_forum: "ログインしなくてもこの投稿に返信ができることを、あなたの友人に知らせます。"
+        to_forum: "このフォーラムにワンクリックで参加できるようにあなたの友人にメールを送ります。"
         sso_enabled: "このトピックに招待したい人のユーザ名を入力してください。"
         to_topic_blank: "このトピックに招待したい人のユーザ名かメールアドレスを入力してください。"
         to_topic_email: "You've entered an email address. We'll email an invitation that allows your friend to immediately reply to this topic."
@@ -2197,11 +2197,11 @@ ja:
           spam: 'スパム'
           rate_limits: '投稿制限'
           developer: '開発者向け'
-          embedding: "埋め込む"
+          embedding: "埋め込み情報"
           legal: "法律に基づく情報"
           uncategorized: 'その他'
           backups: "バックアップ"
-          login: "ログインする"
+          login: "ログイン"
           plugins: "プラグイン"
       badges:
         title: バッジ
@@ -2422,7 +2422,7 @@ ja:
           name: 活動家
           description: ユーザを三人招待した。
         champion:
-          name: チャンピョン
+          name: 王者
           description: ユーザを十人招待した。
         first_share:
           name: 初めてのシェア

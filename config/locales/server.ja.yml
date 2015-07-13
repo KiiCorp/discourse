@@ -7,9 +7,9 @@
 
 ja:
   dates:
-    short_date_no_year: "MMM D日"
-    short_date: "YYYY年 MMM D日"
-    long_date: "YYYY年 MMMM D日 h:mma"
+    short_date_no_year: "MMMDo"
+    short_date: "ll"
+    long_date: "lll"
 
   datetime: &datetime
     month_names:
@@ -425,9 +425,9 @@ ja:
     error: "メールアドレスの更新に失敗しました。アドレスが既に使用されているかもしれません。"
 
   activation:
-    action: "アカウントを有効する"
-    already_done: "申し訳ありませんが、このアカウント認証リンクは無効です。既にアカウントがアクティブになっていませんか?"
-    please_continue: "あなたのアカウントは確認されました。ホームにリダイレクトされます"
+    action: "アカウントを有効にする"
+    already_done: "申し訳ありませんが、このアカウント認証リンクは無効です。既にアカウントが有効になっていませんか？"
+    please_continue: "あなたのアカウントを確認しました。ホームにリダイレクトします"
     continue_button: "%{site_name} へ"
     welcome_to: "%{site_name} へようこそ!"
     approval_required: "このフォーラムにアクセスするにはモデレータによる承認が必要です。承認されるとメールにて通知されます!"
